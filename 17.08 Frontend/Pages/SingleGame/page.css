@@ -1,0 +1,48 @@
+.singleGame-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.singleGame-body {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.singleGame-info {
+  max-width: 600px;
+}
+
+.singleGame-img {
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+.singleGame-container h2 {
+  font-size: 2rem;
+}
+
+.singleGame-container h3 {
+  font-weight: 450;
+  font-size: .875rem;
+}
+
+.singleGame-container h4 {
+  font-weight: 350;
+  font-size: .75rem;
+  padding-right: 25px;
+  margin: 0;
+}
+
+.singleGame-PT {
+  display: flex;
+  padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .singleGame-body {
+    display: flex;
+    flex-direction: column;
+  }
+}
