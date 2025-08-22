@@ -1,0 +1,184 @@
+.basket-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+}
+
+.basket-container h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 2.2rem;
+  font-weight: 700;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5em;
+}
+
+.empty-basket {
+  text-align: center;
+  color: #6c757d;
+  font-size: 1.2rem;
+  padding: 2em;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.basket-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.basket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.game-title {
+  margin: 0 0 0.8em 0;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.price-info {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+}
+
+.item-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #27ae60;
+  background-color: #e8f6ef;
+  padding: 0.3em 0.8em;
+  border-radius: 4px;
+}
+
+.quantity-label {
+  font-size: 0.95rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.item-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1em;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.qty-btn.plus {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.qty-btn.plus:hover {
+  background-color: #27ae60;
+}
+
+.qty-btn.minus {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.qty-btn.minus:hover {
+  background-color: #c0392b;
+}
+
+.qty-display {
+  min-width: 36px;
+  text-align: center;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.line-total {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  padding: 0.4em 1em;
+  background-color: #e8f4fc;
+  border-radius: 6px;
+}
+
+.basket-footer {
+  border-top: 2px solid #e9ecef;
+  padding-top: 1.5em;
+}
+
+.total-section {
+  text-align: right;
+  margin-bottom: 1.5em;
+}
+
+.total-section h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+.buy-btn, .empty-btn {
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.buy-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.buy-btn:hover {
+  background-color: #2980b9;
+}
+
+.empty-btn {
+  background-color: #e74c3c;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.empty-btn:hover {
+  background-color: #c0392b;
+}
