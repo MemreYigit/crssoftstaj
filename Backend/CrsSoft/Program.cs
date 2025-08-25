@@ -36,6 +36,7 @@ builder.Services.AddTransient<IGameService, GameService>();
 // Cart services (cookie + DB)
 builder.Services.AddScoped<ICartCookieService, CartCookieService>();
 builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 
 // ---------- JWT Auth ----------
 builder.Services

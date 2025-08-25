@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrsSoft")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cd9a41ad43cb5880cd43257413481e564dedb46")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrsSoft")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrsSoft")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -109,7 +109,6 @@ namespace CrsSoft.Controllers
             }
         }
 
-        [Authorize]
         [HttpGet("isAuthenticated")]
         public bool IsAuthenticated()
         {

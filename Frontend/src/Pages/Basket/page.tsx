@@ -23,16 +23,12 @@ const api = axios.create({
 
 const Basket: React.FC = () => {
   const [cart, setCart] = useState<Cart>({ cartId: "", items: [] });
-  //const [loading, setLoading] = useState(true);
 
-  // GET /cart
   const loadCart = async () => {
-    //setLoading(true);
     try {
       const res = await api.get<Cart>("/cart");
       setCart(res.data);
     } finally {
-      //setLoading(false);
     }
   };
 
@@ -61,14 +57,10 @@ const Basket: React.FC = () => {
     await loadCart();
   };
 
-  /*if (loading) {
-    return (
-      <div className="home-container">
-        <h1>Your Basket</h1>
-        <p></p>
-      </div>
-    );
-  }*/
+  const buy = async () => {
+    await api.post("/order/createfromcart")
+    await loadCart();
+  }
 
   return (
     <div className="basket-container">
@@ -109,7 +101,7 @@ const Basket: React.FC = () => {
             <h2>Total: ${totalPrice.toFixed(2)}</h2>
           </div>
           <div className="action-buttons">
-            <button className="buy-btn">Buy</button>
+            <button onClick={buy} className="buy-btn">Buy</button>
             <button onClick={emptyCart} className="empty-btn"><i className="fa-solid fa-trash" /> Empty Basket</button>
           </div>
         </div>

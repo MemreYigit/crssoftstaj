@@ -4694,11 +4694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VisualStudio\\CrsSoft\\CrsSoft\\CrsSoft.csproj",
+      "projectUniqueName": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\CrsSoft.csproj",
       "projectName": "CrsSoft",
-      "projectPath": "D:\\VisualStudio\\CrsSoft\\CrsSoft\\CrsSoft.csproj",
+      "projectPath": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\CrsSoft.csproj",
       "packagesPath": "C:\\Users\\Memre Yiğit\\.nuget\\packages\\",
-      "outputPath": "D:\\VisualStudio\\CrsSoft\\CrsSoft\\obj\\",
+      "outputPath": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

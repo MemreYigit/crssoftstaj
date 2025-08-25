@@ -19,7 +19,7 @@ namespace CrsSoft.Entities
 
         // Relationship to User
         public int UserID { get; set; }
-        public required User User { get; set; }
+        public User User { get; set; }
 
 
         // For DataContext arrange relationship

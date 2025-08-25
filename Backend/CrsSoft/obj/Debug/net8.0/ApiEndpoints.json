@@ -140,6 +140,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CrsSoft.Controllers.OrderController",
+    "Method": "CreateOrderFromCart",
+    "RelativePath": "Order/createfromcart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CrsSoft.Controllers.OrderController",
+    "Method": "GetOrders",
+    "RelativePath": "Order/orderDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CrsSoft.Controllers.AuthController",
     "Method": "RegisterUserAsync",
     "RelativePath": "register",

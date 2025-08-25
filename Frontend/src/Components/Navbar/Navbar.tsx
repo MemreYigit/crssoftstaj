@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 import "./Navbar.css"
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -10,29 +10,20 @@ const api = axios.create({
 
 const Navbar = () => {  
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const location = useLocation();
 
-  useEffect(() => {
-    const checkAuth = async () => {
-      try {
-        const response = await api.get('/isAuthenticated');
-        setIsAuthenticated(response.data);
-      } catch (error) {
-        setIsAuthenticated(false);
-      }
-    };
-
-    checkAuth();
-      }, []);
-
-  const handleLogout = () => {
+  const checkAuth = async () => {
     try {
-      api.post("/logout");
+      const response = await api.get('/isAuthenticated');
+      setIsAuthenticated(response.data);
+    } catch (error) {
       setIsAuthenticated(false);
     }
-    catch (err) {
-      console.error("Logout failed:", err);
-    }
-  }
+  };
+
+  useEffect(() => {
+    checkAuth();
+  }, [location]);
 
 
   return (
@@ -45,7 +36,7 @@ const Navbar = () => {
           {!isAuthenticated ? (
             <li><NavLink to="/login">Login</NavLink></li>
           ) : (
-            <li><NavLink to="/" onClick={handleLogout}>Logout</NavLink></li>
+            <li><NavLink to="/profile">Profile</NavLink></li>
           )}
           <li><NavLink to="/game">Games</NavLink></li>
           <li><NavLink to="/basket">Cart ${}</NavLink></li>

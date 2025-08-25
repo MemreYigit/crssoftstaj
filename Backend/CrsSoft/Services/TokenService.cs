@@ -24,12 +24,12 @@ namespace CrsSoft.Services
             var exp = now.AddHours(24);
 
             var claims = new List<Claim>
-        {
-            new Claim(JwtRegisteredClaimNames.Sub, request.UserId.ToString()),
-            new Claim(ClaimTypes.NameIdentifier, request.UserId.ToString()),
-            new Claim(ClaimTypes.Email, request.Email),
-            new Claim(ClaimTypes.Name, request.Email)
-        };
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, request.UserId.ToString()),
+                new Claim(ClaimTypes.NameIdentifier, request.UserId.ToString()),
+                new Claim(ClaimTypes.Email, request.Email),
+                new Claim(ClaimTypes.Name, request.Email)
+            };
 
             var jwt = new JwtSecurityToken(
                 issuer: configuration["AppSettings:ValidIssuer"],

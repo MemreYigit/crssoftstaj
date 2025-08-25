@@ -38,7 +38,6 @@ public class CartService : ICartService
         }
     }
 
-
     public async Task<Cart> GetOrCreate(Guid cartId)
     {
         try
@@ -64,7 +63,6 @@ public class CartService : ICartService
             throw new Exception($"Error get or create cart ıd: {ex.Message}");
         }
     }
-
 
     public async Task MergeCarts(Guid anonymousCartId, int userId)
     {
@@ -142,7 +140,6 @@ public class CartService : ICartService
         }
     }
 
-
     public async Task AddOrIncrementGame (Guid cartId, int gameId, int quantity = 1)
     {
         try
@@ -178,7 +175,6 @@ public class CartService : ICartService
             throw new Exception($"Error increment item: {ex.Message}");
         }
     }
-
 
     public async Task DecrementGame(Guid cartId, int gameId, int quantity = 1)
     {
@@ -220,16 +216,8 @@ public class CartService : ICartService
     {
         try
         {
-            var items = dataContext.CartItems
-                .Where(ci => ci.CartId == cartId);
+            var items = dataContext.CartItems.Where(ci => ci.CartId == cartId);
             dataContext.CartItems.RemoveRange(items);
-            
-            var cart = dataContext.Carts
-                .FirstOrDefault(c => c.Id == cartId);
-            if (cart != null)
-            {
-                dataContext.Carts.Remove(cart);
-            }
             await dataContext.SaveChangesAsync();
         }
         catch (Exception ex)

@@ -1,6 +1,7 @@
 import './App.css';
 import Login from './Pages/Login/page';
 import Home from './Pages/Home/page';
+import Profile from './Pages/Profile/page';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Game from './Pages/Games/page';
 import Sharedlayout from './Components/SharedLayout/Sharedlayout';
@@ -21,6 +22,7 @@ function App() {
             <Route path='game/:gameId' element={<SingleGame />} />
             <Route path="search" element={<SearchPage />} />
             <Route path="basket" element={<Basket />} />
+            <Route path="profile" element={<Profile />} />
           </Route>
         </Routes>
       </BrowserRouter>
