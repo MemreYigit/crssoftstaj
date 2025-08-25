@@ -4,18 +4,36 @@ import { useEffect, useState } from "react";
 import "./page.css"
 import downloadImage from "../../Assets/download.jpg";
 
+const api = axios.create({
+  baseURL: "",            
+  withCredentials: true,  
+});
+
 const SingleGame: React.FC = () => {
   const {gameId} = useParams();
   const [game, setGame] = useState<any>(null);
+  const [comment, setComment] = useState("");
 
   useEffect (() => {
-    axios.get(`http://localhost:5111/game/${gameId}`)
+    api.get(`/game/${gameId}`)
       .then(response => {
         setGame(response.data)
       }).catch(error => {
         console.log(error)
       })
   }, [gameId]);
+
+
+  const addComment = async () => {
+    if (!comment.trim()) return;
+    
+    try {
+      await api.post(`/comment/add/${gameId}`, { text: comment });
+      setComment("");
+    } catch (error: any) {
+      console.error("Error adding comment:", error);
+    }
+  };
 
   return (
     <div className="singleGame-container">
@@ -37,6 +55,10 @@ const SingleGame: React.FC = () => {
         ) : (
           <p>Loading...</p>
         )}
+      <div>
+        <textarea value={comment} onChange={(e) => setComment(e.target.value)}/>
+        <button onClick={addComment}>Add Comment</button>
+      </div>
       <Link to="/game">Back to games</Link>
     </div>
   );
