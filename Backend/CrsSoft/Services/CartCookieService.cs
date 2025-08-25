@@ -4,17 +4,14 @@ namespace CrsSoft.Services
 {
     public class CartCookieService : ICartCookieService
     {
-        private const string CookieName = "cart_id";
-
         public string GetOrCreate(HttpContext http)
         {
-            // Try to get existing cookie
-            if (http.Request.Cookies.TryGetValue(CookieName, out var id) && Guid.TryParseExact(id, "N", out _))
+            var cartId = http.Session.GetString("CartId");
+            if (!string.IsNullOrWhiteSpace(cartId))
             {
-                return id;
+                return cartId;
             }
 
-            // Create new ID if none exists
             return CreateNewCartCookie(http);
         }
 
@@ -27,17 +24,12 @@ namespace CrsSoft.Services
 
         public void SetCartId(HttpContext http, string cartId)
         {
-            http.Response.Cookies.Append(CookieName, cartId, new CookieOptions
-            {
-                HttpOnly = true,
-                Secure = false,
-                SameSite = SameSiteMode.Lax,
-            });
+            http.Session.SetString("CartId", cartId);
         }
 
         public void Clear(HttpContext http)
         {
-            http.Response.Cookies.Delete(CookieName);
+            http.Session.Remove("CartId");
         }
     }
 }

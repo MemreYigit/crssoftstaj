@@ -49,8 +49,11 @@ const Profile: React.FC = () => {
 
   return (
     <div className="profile-container">
-      <h2>Profile</h2>
-      
+      <div className="profile-header">
+        <h2>Profile</h2>
+        <button onClick={handleLogout} className="logout-btn">Logout</button>
+      </div>
+
       <div className="orders-section">
         <h3>Your Orders</h3>
         
@@ -105,7 +108,6 @@ const Profile: React.FC = () => {
         )}
       </div>
 
-      <button onClick={handleLogout} className="logout-btn">Logout</button>
     </div>
   );
 };

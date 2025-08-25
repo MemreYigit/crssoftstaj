@@ -11,11 +11,11 @@ using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ---------- EF Core ----------
+// EF Core
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// ---------- Controllers / JSON ----------
+// Controllers / JSON
 builder.Services
     .AddControllers()
     .AddJsonOptions(options =>
@@ -23,11 +23,11 @@ builder.Services
         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
 
-// ---------- Identity / HTTP ----------
+// Identity / HTTP 
 builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 builder.Services.AddHttpContextAccessor();
 
-// ---------- App services ----------
+// App services 
 builder.Services.AddTransient<IAuthService, AuthService>();
 builder.Services.AddTransient<ITokenService, TokenService>();
 builder.Services.AddTransient<IUserService, UserService>();
@@ -38,7 +38,7 @@ builder.Services.AddScoped<ICartCookieService, CartCookieService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 
-// ---------- JWT Auth ----------
+// JWT Auth 
 builder.Services
     .AddAuthentication(options =>
     {
@@ -63,12 +63,14 @@ builder.Services
         {
             OnMessageReceived = ctx =>
             {
-                if (string.IsNullOrEmpty(ctx.Token) &&
-                    ctx.Request.Cookies.TryGetValue("AuthToken", out var cookieToken))
+                if (string.IsNullOrEmpty(ctx.Token)) 
                 {
-                    ctx.Token = cookieToken;
+                    var authToken = ctx.HttpContext.Session.GetString("auth_token");
+                    if (!string.IsNullOrEmpty(authToken))
+                    {
+                        ctx.Token = authToken;
+                    }
                 }
-
                 return Task.CompletedTask;
             }
         };
@@ -82,14 +84,12 @@ builder.Services.AddDistributedMemoryCache();
 
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(20);
+    options.IdleTimeout = TimeSpan.FromMinutes(60);
     options.Cookie.HttpOnly = true;
-    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
-    options.Cookie.SameSite = SameSiteMode.Lax;
     options.Cookie.IsEssential = true;
 });
 
-// ---------- CORS (single policy) ----------
+// CORS (single policy)
 builder.Services.AddCors(o =>
 {
     o.AddPolicy("Spa", p => p

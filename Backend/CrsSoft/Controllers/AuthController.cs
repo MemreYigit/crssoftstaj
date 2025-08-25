@@ -41,15 +41,7 @@ namespace CrsSoft.Controllers
                 var userCart = await cartService.GetOrCreateForUser(result.UserId);
                 cartCookieService.SetCartId(HttpContext, userCart.Id.ToString("N"));
 
-                var cookieOptions = new CookieOptions
-                {
-                    HttpOnly = true,
-                    Secure = false,
-                    SameSite = SameSiteMode.Lax,
-                };
-
-                Response.Cookies.Append("AuthToken", result.AuthToken, cookieOptions);
-
+                HttpContext.Session.SetString("auth_token", result.AuthToken);
                 return Ok(result);
             }
             catch (UnauthorizedAccessException)
@@ -95,10 +87,7 @@ namespace CrsSoft.Controllers
         {
             try
             {
-                // Clear authentication cookie
-                Response.Cookies.Delete("AuthToken");
-
-                // Create a completely new anonymous cart
+                HttpContext.Session.Remove("auth_token");
                 cartCookieService.CreateNewCartCookie(HttpContext);
 
                 return NoContent();
@@ -112,7 +101,7 @@ namespace CrsSoft.Controllers
         [HttpGet("isAuthenticated")]
         public bool IsAuthenticated()
         {
-            var authToken = Request.Cookies["AuthToken"];
+            var authToken = HttpContext.Session.GetString("auth_token");
             return !string.IsNullOrEmpty(authToken);
         }
     }
