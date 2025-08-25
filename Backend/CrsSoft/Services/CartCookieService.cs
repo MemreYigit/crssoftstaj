@@ -32,8 +32,6 @@ namespace CrsSoft.Services
                 HttpOnly = true,
                 Secure = false,
                 SameSite = SameSiteMode.Lax,
-                Expires = DateTimeOffset.UtcNow.AddDays(30),
-                Path = "/"
             });
         }
 

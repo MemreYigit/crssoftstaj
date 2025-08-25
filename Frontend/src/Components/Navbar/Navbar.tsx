@@ -38,7 +38,6 @@ const Navbar = () => {
           ) : (
             <li><NavLink to="/profile">Profile</NavLink></li>
           )}
-          <li><NavLink to="/game">Games</NavLink></li>
           <li><NavLink to="/basket">Cart ${}</NavLink></li>
         </ul>
       </nav>

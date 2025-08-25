@@ -12,6 +12,8 @@ const api = axios.create({
 interface OrderItem {
   orderID: number;
   gameID: number;
+  gameName: string;
+  gamePlatform: string;
   quantity: number;
   price: number;
 }
@@ -60,7 +62,7 @@ const Profile: React.FC = () => {
               <div key={order.orderId} className="order-card">
                 <div className="order-header">
                   <div className="order-info">
-                    <h4>Order #{order.orderId}</h4>
+                    <h4>Order</h4>
                     <span className="order-date">
                         {new Date(order.orderDate).toLocaleString("en-US", {
                           year: "numeric",
@@ -81,7 +83,8 @@ const Profile: React.FC = () => {
                   {order.orderItems.map((item: OrderItem) => (
                     <div key={`${item.orderID}-${item.gameID}`} className="order-item">
                       <div className="order-item-info">
-                        <span className="order-item-name">{item.gameID}</span>
+                        <span className="order-item-name">{item.gameName}</span>
+                        <span className="order-item-quantity">{item.gamePlatform}</span>
                         <span className="order-item-quantity">Qty: {item.quantity}</span>
                       </div>
                       <div className="order-item-price">

@@ -2,6 +2,7 @@
 using CrsSoft.Data;
 using CrsSoft.Entities;
 using CrsSoft.Interfaces;
+using CrsSoft.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Immutable;
 using static CrsSoft.Entities.Enums.EnumOrderStatus;
@@ -82,9 +83,11 @@ namespace CrsSoft.Services
                         OrderDate = o.OrderDate,
                         OrderPrice = o.OrderPrice,
                         Status = o.Status.ToString(),
-                        OrderItems = o.OrderItems.Select(oi => new OrderItem
+                        OrderItems = o.OrderItems.Select(oi => new OrderItemGameName
                         {
                             GameID = oi.GameID,
+                            GameName = oi.Game.Name,
+                            GamePlatform = oi.Game.Platform,
                             Quantity = oi.Quantity,
                             Price = oi.Price
                         })
