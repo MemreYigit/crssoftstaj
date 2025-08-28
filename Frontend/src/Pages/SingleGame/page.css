@@ -25,7 +25,7 @@
 
 .singleGame-container h3 {
   font-weight: 450;
-  font-size: .875rem;
+  font-size: 1.2rem;
 }
 
 .singleGame-container h4 {
@@ -45,4 +45,68 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+.comments-section {
+  margin-top: 2em;
+  padding: 1.5em;
+  border-top: 0.1em solid #ddd;
+  background-color: #fafafa;
+  border-radius: 0.5em;
+}
+
+.comments-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.comment {
+  margin-bottom: 1em;
+  padding: 0.6em;
+  border: 0.1em solid #e0e0e0;
+  border-radius: 0.4em;
+  background-color: #fff;
+}
+
+.comment p {
+  margin: 0 0 0.1em 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.comment small {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.comment-add {
+  display: flex;
+  gap: 0.8em;          
+}
+
+.comment-add textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4em;
+  font-size: 0.875rem;
+}
+
+.comment-add button {
+  padding: 0.8em;
+  border: none;
+  border-radius: 0.4em;
+  background-color: #4a90e2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.comment-add button:hover {
+  background-color: #357ab7;
+}
+
+.backtogames {
+  display: block;
+  margin: 20px;
 }

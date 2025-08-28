@@ -1,6 +1,8 @@
 ﻿using CrsSoft.Data;
 using CrsSoft.Entities;
 using CrsSoft.Interfaces;
+using CrsSoft.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CrsSoft.Services
 {
@@ -34,5 +36,32 @@ namespace CrsSoft.Services
             }
         }
 
+        public async Task<List<CommentUserName>> GetCommentsForGame(int gameId)
+        {
+            try
+            {
+                var comments = await dataContext.Comments
+                    .Where(c => c.GameID == gameId)
+                    .Include(c => c.User)
+                    .OrderByDescending(c => c.CreatedAt)
+                    .Select(c => new CommentUserName
+                    {
+                        Id = c.Id,
+                        CommentText = c.CommentText,
+                        CreatedAt = c.CreatedAt,
+                        GameID = c.GameID,
+                        UserID = c.UserID,
+                        UserName = c.User.Name
+                    })
+                    .ToListAsync();
+
+                return comments;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error retrieving comments for game {gameId}: {ex.Message}");
+            }
+        }
     }
 }
