@@ -24,19 +24,18 @@ builder.Services
     });
 
 // Identity / HTTP 
-builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 builder.Services.AddHttpContextAccessor();
-
-// App services 
-builder.Services.AddTransient<IAuthService, AuthService>();
-builder.Services.AddTransient<ITokenService, TokenService>();
-builder.Services.AddTransient<IUserService, UserService>();
-builder.Services.AddTransient<IGameService, GameService>();
 
 // Cart services (cookie + DB)
 builder.Services.AddScoped<ICartCookieService, CartCookieService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<ICommentService, CommentService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IGameService, GameService>();
 
 // JWT Auth 
 builder.Services
@@ -103,6 +102,8 @@ var app = builder.Build();
 
 
 app.UseHttpsRedirection();
+
+app.UseStaticFiles();
 
 // Allow SameSite=None cookies to pass through when cross-site
 app.UseCookiePolicy(new CookiePolicyOptions

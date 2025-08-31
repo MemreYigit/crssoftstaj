@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import downloadImage from "../../Assets/download.jpg";
 
 const API = "http://localhost:5111";
 
@@ -25,16 +24,14 @@ const SearchPage: React.FC = () => {
       <h2>Search results for "{query}"</h2>
       <div className="games-body">
         {results.map((game) => (
-          <div
-            key={game.id}
-            onClick={() => navigate(`/game/${game.id}`)}
-            className="game-card"
-          >
-            <img src={downloadImage} alt={game.name} className="game-image" />
-            <h2>{game.name}</h2>
+          <div key={game.id} onClick={() => navigate(`/game/${game.id}`)} className="game-card">
+            <img src={game.imageUrl} alt={game.name} className="game-image" />
+            <h2 className="game-name">{game.name}</h2>
+            
             <div className="game-info">
-              <h3>{game.platform}</h3>
-              <h3>${game.price}</h3>
+              <h3 className="game-platform">{game.platform}</h3>
+              <h3 className="game-price">${game.price}</h3>
+            
             </div>
           </div>
         ))}

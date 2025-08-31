@@ -101,8 +101,8 @@ const Basket: React.FC = () => {
             <h2>Total: ${totalPrice.toFixed(2)}</h2>
           </div>
           <div className="action-buttons">
+            <button onClick={emptyCart} className="empty-btn"><i className="fa-solid fa-trash" /> Empty</button>            
             <button onClick={buy} className="buy-btn">Buy</button>
-            <button onClick={emptyCart} className="empty-btn"><i className="fa-solid fa-trash" /> Empty Basket</button>
           </div>
         </div>
       )}

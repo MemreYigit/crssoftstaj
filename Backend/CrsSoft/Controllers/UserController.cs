@@ -1,59 +1,145 @@
-﻿using CrsSoft.Data;
-using CrsSoft.Entities;
+﻿using CrsSoft.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
+using System.Security.Claims;
 
 namespace CrsSoft.Controllers
 {
     [ApiController]
-    [Route("/[controller]")]
+    [Route("[controller]")]
     public class UserController : ControllerBase
-    {   
-        private readonly DataContext _dataContext;
-        public UserController(DataContext dataContext)
+    {
+        private readonly IUserService userService;
+
+        public UserController(IUserService userService)
         {
-            _dataContext = dataContext;
+            this.userService = userService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAllUsers()
+        [Authorize]
+        [HttpGet("getUserInfo")]
+        public async Task<IActionResult> GetUserInfo()
         {
-            var _users = await _dataContext.Users.ToListAsync();
-
-            return Ok(_users);
-        }
-
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetUser(int id)
-        {
-            var _user = await _dataContext.Users.FindAsync(id);
-            if (_user == null)
+            try
             {
-                return NotFound("User not found.");     //BadRequest
+                var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+                if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
+                {
+                    return Unauthorized(new { success = false, message = "User not authenticated" });
+                }
+
+                var userInfo = await userService.GetUserDetails(userId);
+                return Ok(userInfo);
             }
-            return Ok(_user);
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
-        [HttpPost]
-        public async Task<IActionResult> AddUser([FromBody]User user)
+        [Authorize]
+        [HttpPut("changeName")]
+        public async Task<IActionResult> changeName(string name)
         {
-            _dataContext.Users.Add(user);
-            await _dataContext.SaveChangesAsync();
+            try
+            {
+                var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+                if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
+                {
+                    return Unauthorized(new { success = false, message = "User not authenticated" });
+                }
 
-            return Ok(await _dataContext.Users.ToListAsync());
+                await userService.ChangeName(userId, name);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(int id)
+        [Authorize]
+        [HttpPut("changeSurname")]
+        public async Task<IActionResult> changeSurname(string surname)
         {
-            var _user = await _dataContext.Users.FindAsync(id);
-            if (_user == null) { return NotFound("User Not Found."); }
+            try
+            {
+                var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+                if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
+                {
+                    return Unauthorized(new { success = false, message = "User not authenticated" });
+                }
 
-            _dataContext.Remove(_user);
-            await _dataContext.SaveChangesAsync();
+                await userService.ChangeSurname(userId, surname);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
-            return Ok(await _dataContext.Users.ToListAsync());
+        [Authorize]
+        [HttpPut("changeEmail")]
+        public async Task<IActionResult> changeEmail(string email)
+        {
+            try
+            {
+                var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+                if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
+                {
+                    return Unauthorized(new { success = false, message = "User not authenticated" });
+                }
+
+                await userService.ChangeEmail(userId, email);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [Authorize]
+        [HttpPut("changePassword")]
+        public async Task<IActionResult> changePassword(string password)
+        {
+            try
+            {
+                var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+                if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
+                {
+                    return Unauthorized(new { success = false, message = "User not authenticated" });
+                }
+
+                await userService.ChangePassword(userId, password);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [Authorize]
+        [HttpPut("addFunds")]
+        public async Task<IActionResult> addFunds(int money)
+        {
+            try
+            {
+                var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+                if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
+                {
+                    return Unauthorized(new { success = false, message = "User not authenticated" });
+                }
+
+                await userService.AddFunds(userId, money);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

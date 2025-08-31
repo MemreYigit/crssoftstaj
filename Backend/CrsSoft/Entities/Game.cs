@@ -22,6 +22,8 @@ namespace CrsSoft.Entities
 
         public GameType? Type { get; set; }                         // Get or set game's type 
 
+        [Url]
+        public string? ImageUrl { get; set; }                       // Get or set game's image url
 
         // For DataContext arrange relationship
         public List<Comment> Comments { get; set; } = new();

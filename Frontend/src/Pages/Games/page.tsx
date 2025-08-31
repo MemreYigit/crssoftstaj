@@ -2,12 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./page.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import downloadImage from "../../Assets/download.jpg";
 
-// axios instance that always includes cookies
 const api = axios.create({
   baseURL: "",
-  withCredentials: true, // <-- IMPORTANT for cookies
+  withCredentials: true, 
 });
 
 const Game: React.FC = () => {
@@ -91,7 +89,7 @@ const Game: React.FC = () => {
                   className="dropdown-item"
                   onMouseDown={() => handleSelect(g.id)}
                 >
-                  <img src={downloadImage} alt={g.name} />
+                  <img src={g.imageUrl} alt={g.name} />
                   <div className="dropdown-text">
                     <div className="dropdown-title">{g.name}</div>
                     <div className="dropdown-platform">{g.platform}</div>
@@ -104,26 +102,18 @@ const Game: React.FC = () => {
 
       <div className="games-body">
         {games.map((game) => (
-          <div
-            key={game.id}
-            onClick={() => navigate(`/game/${game.id}`)}
-            className="game-card"
-          >
-            <img src={downloadImage} alt={game.name} className="game-image" />
+          <div key={game.id} onClick={() => navigate(`/game/${game.id}`)} className="game-card">
+            <img src={game.imageUrl} alt={game.name} className="game-image" />
             <h2 className="game-name">{game.name}</h2>
+            
             <div className="game-info">
               <h3 className="game-platform">{game.platform}</h3>
               <h3 className="game-price">${game.price}</h3>
-              <button
-                className="shopping-button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  addToCart(game.id, 1);
-                }}
-              >
+              <button className="shopping-button" onClick={(e) => {e.stopPropagation(); addToCart(game.id, 1);}}>
                 <i className="fa-solid fa-cart-shopping"></i>
               </button>
             </div>
+            
           </div>
         ))}
       </div>
@@ -132,82 +122,3 @@ const Game: React.FC = () => {
 };
 
 export default Game;
-
-
-/*{games.map((game, index) => (
-  <tr key={index} onClick={() => navigate(`/game/${game.id}`)} className="games-row">
-    <td>{game.name}</td>
-    <td>{game.platform}</td>
-    <td>${game.price}</td>
-  </tr>
-))}*/
-
-
-/* <div className="enum-games">
-  {gameTypes.map((type, index) => (
-    <button>{type}</button>
-  ))}
-</div> */
-
-
-/*
-import React, { useEffect } from "react";
-import "./page.css";
-import axios from "axios";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import downloadImage from "../../Assets/download.jpg";
-
-const Game: React.FC = () => {
-  const [games, setGames] = useState<any[]>([]);
-  const [search, setSearch] = useState("");
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    axios.get("http://localhost:5111/game")
-      .then(response => {
-        console.log(response.data)
-        setGames(response.data)
-      }).catch(error => {
-        console.log(error)
-      })
-  }, []);
-
-  useEffect(() => {
-    const delayDebounce = setTimeout(() => {
-      const url = search.trim()
-        ? `http://localhost:5111/game/search?s=${encodeURIComponent(search)}`
-        : "http://localhost:5111/game";
-
-      axios.get(url)
-        .then(res => setGames(res.data))
-        .catch(console.error);
-    }, 300); 
-
-    return () => clearTimeout(delayDebounce);
-  }, [search]);
-  
-  return (
-    <div className="games-container">
-      <div className="search-container">
-        <input type="text" placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)}/>
-        <button type="button" onClick={() => setSearch(search)}><i className="fa fa-search"></i></button>
-      </div>
-      <div className="games-body">
-        {games.map((game, index) => (
-          <div key={index} onClick={() => navigate(`/game/${game.id}`)} className="game-card">
-            <img src={downloadImage} alt={game.name} className="game-image" />
-            <h2 className="game-name">{game.name}</h2>
-            <div className="game-info">
-              <h3 className="game-platform">{game.platform}</h3>
-              <h3 className="game-price">${game.price}</h3>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default Game;  
-*/

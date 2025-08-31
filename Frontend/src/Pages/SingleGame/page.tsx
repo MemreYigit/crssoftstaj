@@ -2,7 +2,6 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./page.css";
-import downloadImage from "../../Assets/download.jpg";
 
 const api = axios.create({
   baseURL: "",            
@@ -25,22 +24,16 @@ const SingleGame: React.FC = () => {
   const [comments, setComments] = useState<Comment[]>([]);
   const [error, setError] = useState<string | null>(null);
 
-  const fetchComments = async () => {
-    try {
-      const res = await api.get(`/comment/${gameId}`);
-      setComments(res.data);
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
   useEffect(() => {
     api.get(`/game/${gameId}`)
       .then(r => setGame(r.data))
       .catch(console.error);
 
-    fetchComments();
-  }, ); 
+    api.get(`/comment/${gameId}`)
+      .then(res => setComments(res.data))
+      .catch(console.error);
+  }, [gameId]);
+
 
   const addComment = async () => {
     if (!makeComment.trim()) return;
@@ -48,7 +41,8 @@ const SingleGame: React.FC = () => {
     try {
       await api.post(`/comment/add/${gameId}`, { text: makeComment });
       setMakeComment("");
-      fetchComments();
+      const res = await api.get(`/comment/${gameId}`);
+      setComments(res.data);
     } catch (error) {
       setError("Please login!")
       console.error("Error adding comment:", error);
@@ -69,7 +63,7 @@ const SingleGame: React.FC = () => {
             <h3>Price: ${game.price}</h3>
           </div>
           <div className="singleGame-img">
-            <img src={downloadImage} alt={game.name} className="game-image" />
+            <img src={game.imageUrl} alt={game.name} className="game-image" />
           </div>
         </div>
       ) : (

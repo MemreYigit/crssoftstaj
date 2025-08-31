@@ -8,6 +8,7 @@ import SingleGame from './Pages/SingleGame/page';
 import SearchPage from './Pages/SearchGame/page';
 import Basket from './Pages/Basket/page'
 import { CartProvider } from './Context/CartContext';
+import EditProfile from './Pages/EditProfile/page';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="search" element={<SearchPage />} />
             <Route path="basket" element={<Basket />} />
             <Route path="profile" element={<Profile />} />
+            <Route path="editprofile" element={<EditProfile />} />
           </Route>
         </Routes>
       </BrowserRouter>
