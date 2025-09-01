@@ -78,8 +78,6 @@ namespace CrsSoft.Services
             }
         }
 
-
-
         public async Task<object> GetOrderDetails(int userId)
         {
             try
@@ -115,7 +113,5 @@ namespace CrsSoft.Services
                 throw new Exception($"Error getting order details: {ex.Message}");
             }
         }
-
-
     }
 }

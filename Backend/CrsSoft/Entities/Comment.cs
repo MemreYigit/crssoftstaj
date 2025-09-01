@@ -14,10 +14,10 @@ namespace CrsSoft.Entities
 
         // Relationship to Game
         public int GameID { get; set; }
-        public required Game Game { get; set; }
+        public Game Game { get; set; }
 
         // Relationship to User
         public int UserID { get; set; }
-        public required User User { get; set; }
+        public User User { get; set; }
     }
 }

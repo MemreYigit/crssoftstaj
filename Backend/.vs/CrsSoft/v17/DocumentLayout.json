@@ -3,84 +3,36 @@
   "WorkspaceRootPath": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\interfaces\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\interfaces\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\enums\\enumorderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\enums\\enumorderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\cartcookieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\cartcookieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\interfaces\\icartcookieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\interfaces\\icartcookieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,12 +43,100 @@
       "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\interfaces\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\interfaces\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\interfaces\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\interfaces\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\interfaces\\icommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\interfaces\\icartcookieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\interfaces\\icartcookieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\models\\generatetokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\models\\generatetokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\models\\generatetokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\models\\generatetokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\models\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\models\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\models\\editprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\models\\editprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\models\\userwithoutpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\models\\userwithoutpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\enums\\enumorderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\enums\\enumorderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\models\\orderitemgamename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\models\\orderitemgamename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\models\\commentusername.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\models\\commentusername.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\models\\addcommentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\models\\addcommentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\models\\userregisterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\models\\userregisterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\models\\userloginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,16 +147,32 @@
       "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\models\\userloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\models\\generatetokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\models\\generatetokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\models\\generatetokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\models\\generatetokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\services\\cartcookieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\services\\cartcookieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|d:\\visualstudiocode\\crssoftstaj\\backend\\crssoft\\migrations\\20250831084701_imageurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F379BCC-F2DF-41FA-B827-75E12EDC6791}|CrsSoft\\CrsSoft.csproj|solutionrelative:crssoft\\migrations\\20250831084701_imageurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -129,33 +185,73 @@
           "SelectedChildIndex": 9,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Controllers\\OrderController.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "CrsSoft\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAA9wD8AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T11:41:11.93Z",
-              "IsPinned": true
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CartService.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\CartService.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Services\\CartService.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\CartService.cs",
-              "RelativeToolTip": "CrsSoft\\Services\\CartService.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAkwIUAAAApAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\ITokenService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\ITokenService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\ITokenService.cs",
+              "RelativeToolTip": "CrsSoft\\Interfaces\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T05:37:45.891Z"
+              "WhenOpened": "2025-08-22T09:01:51.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\IUserService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "CrsSoft\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T18:41:30.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\UserController.cs",
+              "RelativeToolTip": "CrsSoft\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAADgv1MAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T11:51:32.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Cart.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Entities\\Cart.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Cart.cs",
+              "RelativeToolTip": "CrsSoft\\Entities\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T07:23:11.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Data\\DataContext.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Data\\DataContext.cs",
+              "RelativeToolTip": "CrsSoft\\Data\\DataContext.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAIwB4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T07:45:21.482Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -165,61 +261,455 @@
               "RelativeDocumentMoniker": "CrsSoft\\Services\\OrderService.cs",
               "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\OrderService.cs",
               "RelativeToolTip": "CrsSoft\\Services\\OrderService.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAAwF0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T11:21:17.77Z"
+              "WhenOpened": "2025-08-24T11:21:17.77Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Controllers\\CartController.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\CartController.cs",
-              "RelativeToolTip": "CrsSoft\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADYAAAAaAAAAAAAAAA==",
+              "Title": "CartService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Services\\CartService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\CartService.cs",
+              "RelativeToolTip": "CrsSoft\\Services\\CartService.cs",
+              "ViewState": "AgIAAPgAAAAAAAAAAADwv7IAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T06:26:26.747Z"
+              "WhenOpened": "2025-08-25T10:55:08.554Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\CommentService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Services\\CommentService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\CommentService.cs",
+              "RelativeToolTip": "CrsSoft\\Services\\CommentService.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwCYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T18:43:31.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\GameService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Services\\GameService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\GameService.cs",
+              "RelativeToolTip": "CrsSoft\\Services\\GameService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T18:47:38.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IGameService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IGameService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\IGameService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IGameService.cs",
+              "RelativeToolTip": "CrsSoft\\Interfaces\\IGameService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T09:01:53.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ICartService.cs",
               "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\ICartService.cs",
               "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\ICartService.cs",
               "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\ICartService.cs",
               "RelativeToolTip": "CrsSoft\\Interfaces\\ICartService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T08:25:39.235Z"
+              "WhenOpened": "2025-08-22T08:25:39.235Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
+              "Title": "ICommentService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\ICommentService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\ICommentService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\ICommentService.cs",
+              "RelativeToolTip": "CrsSoft\\Interfaces\\ICommentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T18:43:26.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICartCookieService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\ICartCookieService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\ICartCookieService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\ICartCookieService.cs",
+              "RelativeToolTip": "CrsSoft\\Interfaces\\ICartCookieService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T09:20:34.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "CrsSoft\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T09:22:21.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GenerateTokenRequest.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\GenerateTokenRequest.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Models\\GenerateTokenRequest.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\GenerateTokenRequest.cs",
+              "RelativeToolTip": "CrsSoft\\Models\\GenerateTokenRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T07:23:27.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GenerateTokenResponse.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\GenerateTokenResponse.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Models\\GenerateTokenResponse.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\GenerateTokenResponse.cs",
+              "RelativeToolTip": "CrsSoft\\Models\\GenerateTokenResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:44:01.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\CartController.cs",
+              "RelativeToolTip": "CrsSoft\\Controllers\\CartController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:26:26.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IOrderService.cs",
               "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\IOrderService.cs",
               "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IOrderService.cs",
               "RelativeToolTip": "CrsSoft\\Interfaces\\IOrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T11:20:17.257Z"
+              "WhenOpened": "2025-08-24T11:20:17.257Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "CrsSoft\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T11:41:11.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "CrsSoft\\Entities\\Order.cs",
               "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Order.cs",
               "RelativeToolTip": "CrsSoft\\Entities\\Order.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAiwBQAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T11:10:04.075Z"
+              "WhenOpened": "2025-08-24T11:10:04.075Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 18,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Services\\UserService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\UserService.cs",
+              "RelativeToolTip": "CrsSoft\\Services\\UserService.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAowIMAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T07:33:04.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Controllers\\GameController.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\GameController.cs",
+              "RelativeToolTip": "CrsSoft\\Controllers\\GameController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T08:56:47.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Controllers\\CommentController.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "CrsSoft\\Controllers\\CommentController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T11:44:57.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CrsSoft\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T10:12:23.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserWithoutPassword.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\UserWithoutPassword.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Models\\UserWithoutPassword.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\UserWithoutPassword.cs",
+              "RelativeToolTip": "CrsSoft\\Models\\UserWithoutPassword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T19:51:30.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ChangePasswordRequest.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\ChangePasswordRequest.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Models\\ChangePasswordRequest.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\ChangePasswordRequest.cs",
+              "RelativeToolTip": "CrsSoft\\Models\\ChangePasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T06:27:26.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Game.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Game.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Entities\\Game.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Game.cs",
+              "RelativeToolTip": "CrsSoft\\Entities\\Game.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T07:50:49.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EditProfileRequest.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\EditProfileRequest.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Models\\EditProfileRequest.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\EditProfileRequest.cs",
+              "RelativeToolTip": "CrsSoft\\Models\\EditProfileRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T06:09:15.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EnumOrderStatus.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Enums\\EnumOrderStatus.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Entities\\Enums\\EnumOrderStatus.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Enums\\EnumOrderStatus.cs",
+              "RelativeToolTip": "CrsSoft\\Entities\\Enums\\EnumOrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T05:50:52.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20250831084701_ImageUrl.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Migrations\\20250831084701_ImageUrl.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Migrations\\20250831084701_ImageUrl.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Migrations\\20250831084701_ImageUrl.cs",
+              "RelativeToolTip": "CrsSoft\\Migrations\\20250831084701_ImageUrl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T08:47:01.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Entities\\User.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\User.cs",
+              "RelativeToolTip": "CrsSoft\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T12:45:08.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "OrderItemGameName.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\OrderItemGameName.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Models\\OrderItemGameName.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\OrderItemGameName.cs",
+              "RelativeToolTip": "CrsSoft\\Models\\OrderItemGameName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T12:32:31.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CommentUserName.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\CommentUserName.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Models\\CommentUserName.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\CommentUserName.cs",
+              "RelativeToolTip": "CrsSoft\\Models\\CommentUserName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T19:51:35.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AddCommentRequest.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\AddCommentRequest.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Models\\AddCommentRequest.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\AddCommentRequest.cs",
+              "RelativeToolTip": "CrsSoft\\Models\\AddCommentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T12:22:11.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UserRegisterRequest.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\UserRegisterRequest.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Models\\UserRegisterRequest.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\UserRegisterRequest.cs",
+              "RelativeToolTip": "CrsSoft\\Models\\UserRegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T10:01:39.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UserLoginResponse.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\UserLoginResponse.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Models\\UserLoginResponse.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\UserLoginResponse.cs",
+              "RelativeToolTip": "CrsSoft\\Models\\UserLoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:48:42.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserLoginRequest.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\UserLoginRequest.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Models\\UserLoginRequest.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\UserLoginRequest.cs",
+              "RelativeToolTip": "CrsSoft\\Models\\UserLoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:48:40.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Services\\TokenService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\TokenService.cs",
+              "RelativeToolTip": "CrsSoft\\Services\\TokenService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T18:43:42.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Services\\AuthService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\AuthService.cs",
+              "RelativeToolTip": "CrsSoft\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:24:02.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Comment.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Entities\\Comment.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Comment.cs",
+              "RelativeToolTip": "CrsSoft\\Entities\\Comment.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T11:15:04.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CartCookieService.cs",
+              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\CartCookieService.cs",
+              "RelativeDocumentMoniker": "CrsSoft\\Services\\CartCookieService.cs",
+              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\CartCookieService.cs",
+              "RelativeToolTip": "CrsSoft\\Services\\CartCookieService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T10:15:28.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\OrderItem.cs",
               "RelativeDocumentMoniker": "CrsSoft\\Entities\\OrderItem.cs",
@@ -231,80 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "CrsSoft\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAgwAoAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T06:24:05.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EnumOrderStatus.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Enums\\EnumOrderStatus.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Entities\\Enums\\EnumOrderStatus.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Enums\\EnumOrderStatus.cs",
-              "RelativeToolTip": "CrsSoft\\Entities\\Enums\\EnumOrderStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T05:50:52.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Program.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Program.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Program.cs",
-              "RelativeToolTip": "CrsSoft\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAACYAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T06:24:11.133Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Services\\TokenService.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\TokenService.cs",
-              "RelativeToolTip": "CrsSoft\\Services\\TokenService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAuwB4AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T06:40:02.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GameService.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\GameService.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Services\\GameService.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\GameService.cs",
-              "RelativeToolTip": "CrsSoft\\Services\\GameService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T07:33:06.986Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CartCookieService.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\CartCookieService.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Services\\CartCookieService.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\CartCookieService.cs",
-              "RelativeToolTip": "CrsSoft\\Services\\CartCookieService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T07:33:00.177Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 41,
               "Title": "CartItem.cs",
               "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\CartItem.cs",
               "RelativeDocumentMoniker": "CrsSoft\\Entities\\CartItem.cs",
@@ -313,174 +730,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-22T08:12:17.75Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Cart.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Entities\\Cart.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Cart.cs",
-              "RelativeToolTip": "CrsSoft\\Entities\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T07:23:11.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Services\\AuthService.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\AuthService.cs",
-              "RelativeToolTip": "CrsSoft\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T06:24:02.392Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Comment.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Entities\\Comment.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Entities\\Comment.cs",
-              "RelativeToolTip": "CrsSoft\\Entities\\Comment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T11:15:04.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\IAuthService.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "CrsSoft\\Interfaces\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T09:22:21.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ITokenService.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\ITokenService.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\ITokenService.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\ITokenService.cs",
-              "RelativeToolTip": "CrsSoft\\Interfaces\\ITokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T09:01:51.852Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ICartCookieService.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\ICartCookieService.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\ICartCookieService.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\ICartCookieService.cs",
-              "RelativeToolTip": "CrsSoft\\Interfaces\\ICartCookieService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T09:20:34.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IGameService.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IGameService.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\IGameService.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IGameService.cs",
-              "RelativeToolTip": "CrsSoft\\Interfaces\\IGameService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T09:01:53.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Interfaces\\IUserService.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "CrsSoft\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T09:01:50.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Controllers\\GameController.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Controllers\\GameController.cs",
-              "RelativeToolTip": "CrsSoft\\Controllers\\GameController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T08:56:47.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "UserLoginResponse.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\UserLoginResponse.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Models\\UserLoginResponse.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\UserLoginResponse.cs",
-              "RelativeToolTip": "CrsSoft\\Models\\UserLoginResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T06:48:42.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UserLoginRequest.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\UserLoginRequest.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Models\\UserLoginRequest.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\UserLoginRequest.cs",
-              "RelativeToolTip": "CrsSoft\\Models\\UserLoginRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T06:48:40.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "GenerateTokenResponse.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\GenerateTokenResponse.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Models\\GenerateTokenResponse.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\GenerateTokenResponse.cs",
-              "RelativeToolTip": "CrsSoft\\Models\\GenerateTokenResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T06:44:01.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Services\\UserService.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Services\\UserService.cs",
-              "RelativeToolTip": "CrsSoft\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T07:33:04.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "GenerateTokenRequest.cs",
-              "DocumentMoniker": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\GenerateTokenRequest.cs",
-              "RelativeDocumentMoniker": "CrsSoft\\Models\\GenerateTokenRequest.cs",
-              "ToolTip": "D:\\VisualStudioCode\\crssoftstaj\\Backend\\CrsSoft\\Models\\GenerateTokenRequest.cs",
-              "RelativeToolTip": "CrsSoft\\Models\\GenerateTokenRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T07:23:27.41Z"
             }
           ]
         }

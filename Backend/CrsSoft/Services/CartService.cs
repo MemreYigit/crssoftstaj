@@ -211,7 +211,6 @@ public class CartService : ICartService
         }
     }
 
-
     public async Task EmptyCart(Guid cartId)
     {
         try
@@ -225,7 +224,6 @@ public class CartService : ICartService
             throw new Exception($"Error emptying cart: {ex.Message}");
         }
     }
-
 
     public async Task<object> GetCartDetails(Guid cartId)
     {

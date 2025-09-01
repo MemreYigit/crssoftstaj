@@ -5,8 +5,8 @@ namespace CrsSoft.Interfaces
 {
     public interface IGameService
     {
-        public Task<List<Game>> GetAllGamesAsync();
-        public Task<Game> GetSingleGameAsync(int id);
-        public Task<List<Game>> SearchGamesAsync(string? s);
+        Task<List<Game>> GetAllGamesAsync();
+        Task<Game> GetSingleGameAsync(int id);
+        Task<List<Game>> SearchGamesAsync(string? s);
     }
 }

@@ -1,8 +1,6 @@
 ﻿using CrsSoft.Data;
 using CrsSoft.Entities;
 using CrsSoft.Interfaces;
-using CrsSoft.Models;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
 namespace CrsSoft.Services

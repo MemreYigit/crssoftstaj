@@ -63,7 +63,7 @@ const Basket: React.FC = () => {
       await api.post("/order/createfromcart")
       await loadCart();  
     } catch (err: any) {
-      setError( err.response.data.message);
+      setError(err.response.data.message || err.response.data.error);
     }
   }
 

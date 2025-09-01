@@ -31,13 +31,11 @@ namespace CrsSoft.Controllers
 
                 var result = await authService.LoginUserAsync(request);
 
-                // If we have a valid anonymous cart ID, merge it with user's cart
                 if (Guid.TryParse(anonymousCartId, out var cartGuid) && cartGuid != Guid.Empty)
                 {
                     await cartService.MergeCarts(cartGuid, result.UserId);
                 }
 
-                // Get the user's actual cart and update the cookie
                 var userCart = await cartService.GetOrCreateForUser(result.UserId);
                 cartCookieService.SetCartId(HttpContext, userCart.Id.ToString("N"));
 

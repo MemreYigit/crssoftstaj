@@ -25,7 +25,6 @@ const Navbar = () => {
     checkAuth();
   }, [location]);
 
-
   return (
     <div className="navbar-container">
       <div>

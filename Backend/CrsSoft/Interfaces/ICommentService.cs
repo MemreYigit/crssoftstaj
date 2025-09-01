@@ -1,7 +1,11 @@
-﻿namespace CrsSoft.Interfaces
+﻿using CrsSoft.Entities;
+using CrsSoft.Models;
+
+namespace CrsSoft.Interfaces
 {
     public interface ICommentService
     {
-        public Task AddComment(int userId, int gameId, string content);
+        Task AddComment(int userId, int gameId, string content);
+        Task<List<CommentUserName>> GetCommentsForGame(int gameId);
     }
 }

@@ -38,5 +38,20 @@ namespace CrsSoft.Controllers
                 return BadRequest(new { error = ex.Message });
             }
         }
+
+        [HttpGet("{gameId}")]
+        public async Task<IActionResult> GetComments(int gameId)
+        {
+            try
+            {
+                var comments = await commentService.GetCommentsForGame(gameId);
+                return Ok(comments);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+
     }
 }

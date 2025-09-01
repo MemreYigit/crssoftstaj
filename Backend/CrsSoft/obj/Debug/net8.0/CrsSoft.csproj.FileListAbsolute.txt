@@ -335,3 +335,4 @@ D:\VisualStudioCode\crssoftstaj\Backend\CrsSoft\obj\Debug\net8.0\refint\CrsSoft.
 D:\VisualStudioCode\crssoftstaj\Backend\CrsSoft\obj\Debug\net8.0\CrsSoft.pdb
 D:\VisualStudioCode\crssoftstaj\Backend\CrsSoft\obj\Debug\net8.0\CrsSoft.genruntimeconfig.cache
 D:\VisualStudioCode\crssoftstaj\Backend\CrsSoft\obj\Debug\net8.0\ref\CrsSoft.dll
+D:\VisualStudioCode\crssoftstaj\Backend\CrsSoft\bin\Debug\net8.0\CrsSoft.staticwebassets.runtime.json
