@@ -70,13 +70,11 @@ public class CartService : ICartService
 
         try
         {
-            // Get anonymous cart with items 
             var anonymousCart = await dataContext.Carts
                 .AsTracking()
                 .Include(c => c.Items)
                 .FirstOrDefaultAsync(c => c.Id == anonymousCartId);
 
-            // If no anonymous cart or empty, just ensure user has a cart and return
             if (anonymousCart == null || !anonymousCart.Items.Any())
             {
                 await GetOrCreateForUser(userId); 
@@ -84,7 +82,6 @@ public class CartService : ICartService
                 return;
             }
 
-            // Get user cart 
             var userCart = await dataContext.Carts
                 .AsTracking()
                 .Include(c => c.Items)
@@ -92,13 +89,11 @@ public class CartService : ICartService
 
             if (userCart == null)
             {
-                // Create new user cart
                 userCart = new Cart { Id = Guid.NewGuid(), UserId = userId };
                 dataContext.Carts.Add(userCart);
                 await dataContext.SaveChangesAsync();
             }
 
-            // Merge items from anonymous cart to user cart
             foreach (var anonymousItem in anonymousCart.Items.ToList()) 
             {
                 var existingItem = userCart.Items
@@ -106,7 +101,6 @@ public class CartService : ICartService
 
                 if (existingItem != null)
                 {
-                    // Update quantity in database directly to avoid tracking issues
                     await dataContext.CartItems
                         .Where(ci => ci.Id == existingItem.Id)
                         .ExecuteUpdateAsync(setters => setters
@@ -114,7 +108,6 @@ public class CartService : ICartService
                 }
                 else
                 {
-                    // Create new cart item for user
                     dataContext.CartItems.Add(new CartItem
                     {
                         GameId = anonymousItem.GameId,
@@ -124,10 +117,7 @@ public class CartService : ICartService
                 }
             }
 
-            // Remove anonymous cart items
             dataContext.CartItems.RemoveRange(anonymousCart.Items);
-
-            // Remove anonymous cart
             dataContext.Carts.Remove(anonymousCart);
 
             await dataContext.SaveChangesAsync();
@@ -237,8 +227,8 @@ public class CartService : ICartService
                 {
                     i.Id,
                     i.GameId,
-                    GameName = i.Game.Name,     // from Games table
-                    Price = i.Game.Price,    // from Games table
+                    GameName = i.Game.Name,     
+                    Price = i.Game.Price,   
                     i.Quantity
                 })
                 .ToListAsync();
@@ -271,5 +261,4 @@ public class CartService : ICartService
             throw new Exception($"Error ensuring cart exists: {ex.Message}");
         }
     }
-
 }

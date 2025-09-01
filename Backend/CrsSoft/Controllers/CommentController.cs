@@ -19,7 +19,7 @@ namespace CrsSoft.Controllers
 
         [Authorize]
         [HttpPost("add/{gameId}")]
-        public async Task<IActionResult> AddComment(int gameId, [FromBody] AddCommentRequest req)
+        public async Task<IActionResult> AddComment(int gameId, [FromBody] AddCommentRequestModel req)
         {
             try
             {

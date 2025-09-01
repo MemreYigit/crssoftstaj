@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using static CrsSoft.Entities.Enums.EnumGameType;
-using static CrsSoft.Entities.Enums.EnumPlatform;
+using static CrsSoft.Enums.EnumGameType;
+using static CrsSoft.Enums.EnumPlatform;
 
 namespace CrsSoft.Entities
 {

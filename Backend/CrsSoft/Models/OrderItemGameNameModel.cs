@@ -1,8 +1,8 @@
-﻿using static CrsSoft.Entities.Enums.EnumPlatform;
+﻿using static CrsSoft.Enums.EnumPlatform;
 
 namespace CrsSoft.Models
 {
-    public class OrderItemGameName
+    public class OrderItemGameNameModel
     {
         public int GameID { get; set; }
         public string GameName { get; set; }

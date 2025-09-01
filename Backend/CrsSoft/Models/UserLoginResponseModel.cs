@@ -1,6 +1,6 @@
 ﻿namespace CrsSoft.Models
 {
-    public class UserLoginResponse
+    public class UserLoginResponseModel
     {
         public bool AuthenticateResult { get; set; }
         public string AuthToken { get; set; }

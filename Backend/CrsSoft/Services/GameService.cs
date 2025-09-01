@@ -14,29 +14,50 @@ namespace CrsSoft.Services
             _dataContext = dataContext;
         }
 
-        public async Task<List<Game>> GetAllGamesAsync()
+        public async Task<List<Game>> GetAllGames()
         {
-            var games = await _dataContext.Games.ToListAsync();
-
-            return games;   
-        }
-
-        public async Task<Game> GetSingleGameAsync(int id)
-        {
-            var game = await _dataContext.Games.FindAsync(id);
-            return game;
-        }
-
-        public async Task<List<Game>> SearchGamesAsync(string? s)
-        {
-            var games = _dataContext.Games.AsQueryable(); // I can use "Where" with AsQueryable
-
-            if (!string.IsNullOrWhiteSpace(s))
+            try
             {
-                games = games.Where(g => g.Name.Contains(s));
+                var games = await _dataContext.Games.ToListAsync();
+                return games;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
 
-            return await games.ToListAsync();
+        }
+
+        public async Task<Game> GetSingleGame(int id)
+        {
+            try
+            {
+                var game = await _dataContext.Games.FindAsync(id);
+                return game;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<List<Game>> SearchGames(string? s)
+        {
+            try
+            {
+                var games = _dataContext.Games.AsQueryable(); // I can use "Where" with AsQueryable
+
+                if (!string.IsNullOrWhiteSpace(s))
+                {
+                    games = games.Where(g => g.Name.Contains(s));
+                }
+
+                return await games.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }   
 }

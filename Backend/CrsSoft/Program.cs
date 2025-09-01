@@ -77,7 +77,6 @@ builder.Services
 
 builder.Services.AddAuthorization();
 
-
 // Session Cookies
 builder.Services.AddDistributedMemoryCache();
 

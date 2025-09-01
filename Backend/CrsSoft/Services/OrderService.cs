@@ -3,7 +3,7 @@ using CrsSoft.Entities;
 using CrsSoft.Interfaces;
 using CrsSoft.Models;
 using Microsoft.EntityFrameworkCore;
-using static CrsSoft.Entities.Enums.EnumOrderStatus;
+using static CrsSoft.Enums.EnumOrderStatus;
 
 namespace CrsSoft.Services
 {
@@ -94,7 +94,7 @@ namespace CrsSoft.Services
                         OrderPrice = o.OrderPrice,
                         Status = o.Status.ToString(),
                         OrderNumber = o.orderNumber,
-                        OrderItems = o.OrderItems.Select(oi => new OrderItemGameName
+                        OrderItems = o.OrderItems.Select(oi => new OrderItemGameNameModel
                         {
                             GameID = oi.GameID,
                             GameName = oi.Game.Name,

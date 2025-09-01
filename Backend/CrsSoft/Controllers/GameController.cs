@@ -1,6 +1,4 @@
-﻿using CrsSoft.Entities.Enums;
-using CrsSoft.Interfaces;
-using CrsSoft.Services;
+﻿using CrsSoft.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,36 +17,57 @@ namespace CrsSoft.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> GetAllGames()
+        public async Task<IActionResult> GetAllGames()
         {
-            var games = await gameService.GetAllGamesAsync();
-            if (games == null)
+            try
             {
-                return NotFound("There is no games to sell");
+                var games = await gameService.GetAllGames();
+                if (games == null)
+                {
+                    return NotFound("There is no games to sell");
+                }
+                return Ok(games);
             }
-            return Ok(games);
+            catch (Exception ex)
+            {
+                return BadRequest($"An unexpected error occurred while retrieving the games: {ex.Message}");
+            }
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult> GetSingleGame(int id)
+        public async Task<IActionResult> GetSingleGame(int id)
         {
-            var game = await gameService.GetSingleGameAsync(id);
-            if (game == null)
+            try
             {
-                return NotFound("Game is not found");
+                var game = await gameService.GetSingleGame(id);
+                if (game == null)
+                {
+                    return NotFound("Game is not found");
+                }
+                return Ok(game);
             }
-            return Ok(game);
-        }   
+            catch (Exception ex)
+            {
+                return BadRequest($"An unexpected error occurred while retrieving the game: {ex.Message}");
+            }
+        }
 
         [HttpGet("search")]
-        public async Task<ActionResult> SearchGames([FromQuery] string? s)
+        public async Task<IActionResult> SearchGames([FromQuery] string? s)
         {
-            var games = await gameService.SearchGamesAsync(s);
-            if (games == null)
+            try
             {
-                return NotFound("No games found");
+                var games = await gameService.SearchGames(s);
+                if (games == null)
+                {
+                    return NotFound("No games found");
+                }
+                return Ok(games);
             }
-            return Ok(games);
+            catch (Exception ex)
+            {
+                return BadRequest($"An unexpected error occurred while searching for games: {ex.Message}");
+            }
         }
     }
 }

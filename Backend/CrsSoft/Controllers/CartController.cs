@@ -19,46 +19,73 @@ namespace CrsSoft.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var cartIdStr = cartCookieService.GetOrCreate(HttpContext);
-            var cartId = Guid.Parse(cartIdStr);
+            try
+            {
+                var cartIdStr = cartCookieService.GetOrCreate(HttpContext);
+                var cartId = Guid.Parse(cartIdStr);
 
-            var result = await cartService.GetCartDetails(cartId);
-            return Ok(result);
+                var result = await cartService.GetCartDetails(cartId);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"An unexpected error occurred while retrieving the cart: {ex.Message}");
+            }
         }
 
         [HttpPost("add")]
         public async Task<IActionResult> Add([FromBody] CartRequest req)
         {
-            if (req is null) return BadRequest("Invalid game.");
+            try
+            {
+                if (req is null) return BadRequest("Invalid game.");
 
+                var cartIdStr = cartCookieService.GetOrCreate(HttpContext);
+                var cartId = Guid.Parse(cartIdStr);
 
-            var cartIdStr = cartCookieService.GetOrCreate(HttpContext);
-            var cartId = Guid.Parse(cartIdStr);
-
-            await cartService.AddOrIncrementGame(cartId, req.GameId, req.Quantity);
-            return NoContent();
+                await cartService.AddOrIncrementGame(cartId, req.GameId, req.Quantity);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"An unexpected error occurred while adding to the cart: {ex.Message}");
+            }
         }
 
         [HttpPost("decrement")]
         public async Task<IActionResult> Decrement([FromBody] CartRequest req)
         {
-            if (req is null) return BadRequest("Invalid game.");
+            try
+            {
+                if (req is null) return BadRequest("Invalid game.");
 
-            var cartIdStr = cartCookieService.GetOrCreate(HttpContext);
-            var cartId = Guid.Parse(cartIdStr);
+                var cartIdStr = cartCookieService.GetOrCreate(HttpContext);
+                var cartId = Guid.Parse(cartIdStr);
 
-            await cartService.DecrementGame(cartId, req.GameId, Math.Max(1, req.Quantity));
-            return NoContent();
+                await cartService.DecrementGame(cartId, req.GameId, Math.Max(1, req.Quantity));
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"An unexpected error occurred while decrementing the cart item: {ex.Message}");
+            }
         }
 
         [HttpPost("empty")]
         public async Task<IActionResult> EmptyCart()
         {
-            var cartIdStr = cartCookieService.GetOrCreate(HttpContext);
-            var cartId = Guid.Parse(cartIdStr);
+            try
+            {
+                var cartIdStr = cartCookieService.GetOrCreate(HttpContext);
+                var cartId = Guid.Parse(cartIdStr);
 
-            await cartService.EmptyCart(cartId);
-            return NoContent();
+                await cartService.EmptyCart(cartId);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"An unexpected error occurred while emptying the cart: {ex.Message}");
+            }
         }
 
         public record CartRequest(int GameId, int Quantity = 1);

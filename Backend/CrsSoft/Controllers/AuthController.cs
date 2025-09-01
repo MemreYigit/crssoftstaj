@@ -1,6 +1,5 @@
 ﻿using CrsSoft.Interfaces;
 using CrsSoft.Models;
-using CrsSoft.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,13 +22,13 @@ namespace CrsSoft.Controllers
 
         // Kullanıcıların siteye kendi hesaplarıyla girişini sağlıyor
         [HttpPost("login")]
-        public async Task<ActionResult> LoginUserAsync([FromBody] UserLoginRequest request)
+        public async Task<IActionResult> LoginUser([FromBody] UserLoginRequestModel request)
         {
             try
             {
                 var anonymousCartId = cartCookieService.GetOrCreate(HttpContext);
 
-                var result = await authService.LoginUserAsync(request);
+                var result = await authService.LoginUser(request);
 
                 if (Guid.TryParse(anonymousCartId, out var cartGuid) && cartGuid != Guid.Empty)
                 {
@@ -58,11 +57,11 @@ namespace CrsSoft.Controllers
 
         // Kullanıcıların hesap oluşturmasını sağlıyor
         [HttpPost("register")]
-        public async Task<ActionResult> RegisterUserAsync([FromBody] UserRegisterRequest request)
+        public async Task<IActionResult> RegisterUser([FromBody] UserRegisterRequestModel request)
         {
             try
             {
-                await authService.RegisterUserAsync(request);
+                await authService.RegisterUser(request);
                 return Ok("Registration successful.");
             }
             catch (ArgumentNullException ex)
@@ -81,7 +80,7 @@ namespace CrsSoft.Controllers
 
         [Authorize]
         [HttpPost("logout")]
-        public ActionResult LogoutUserAsync()
+        public ActionResult LogoutUser()
         {
             try
             {

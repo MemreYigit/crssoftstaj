@@ -1,6 +1,6 @@
 ﻿namespace CrsSoft.Models
 {
-    public class ChangePasswordRequest
+    public class ChangePasswordRequestModel
     {
         public string CurrentPassword { get; set; }
         public string NewPassword { get; set; }

@@ -16,7 +16,7 @@ namespace CrsSoft.Services
             this.configuration = configuration;
         }
 
-        public Task<GenerateTokenResponse> GenerateToken(GenerateTokenRequest request)
+        public Task<GenerateTokenResponseModel> GenerateToken(GenerateTokenRequestModel request)
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["AppSettings:Secret"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -40,7 +40,7 @@ namespace CrsSoft.Services
                 signingCredentials: creds
             );
 
-            return Task.FromResult(new GenerateTokenResponse
+            return Task.FromResult(new GenerateTokenResponseModel
             {
                 Token = new JwtSecurityTokenHandler().WriteToken(jwt),
                 TokenExpireDate = exp

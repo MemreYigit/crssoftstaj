@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using static CrsSoft.Entities.Enums.EnumOrderStatus;
+using static CrsSoft.Enums.EnumOrderStatus;
 
 namespace CrsSoft.Entities
 {

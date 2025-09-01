@@ -36,7 +36,7 @@ namespace CrsSoft.Services
             }
         }
 
-        public async Task<List<CommentUserName>> GetCommentsForGame(int gameId)
+        public async Task<List<CommentUserNameModel>> GetCommentsForGame(int gameId)
         {
             try
             {
@@ -44,7 +44,7 @@ namespace CrsSoft.Services
                     .Where(c => c.GameID == gameId)
                     .Include(c => c.User)
                     .OrderByDescending(c => c.CreatedAt)
-                    .Select(c => new CommentUserName
+                    .Select(c => new CommentUserNameModel
                     {
                         Id = c.Id,
                         CommentText = c.CommentText,

@@ -6,30 +6,59 @@ namespace CrsSoft.Services
     {
         public string GetOrCreate(HttpContext http)
         {
-            var cartId = http.Session.GetString("CartId");
-            if (!string.IsNullOrWhiteSpace(cartId))
+            try
             {
-                return cartId;
-            }
+                var cartId = http.Session.GetString("CartId");
+                if (!string.IsNullOrWhiteSpace(cartId))
+                {
+                    return cartId;
+                }
 
-            return CreateNewCartCookie(http);
+                return CreateNewCartCookie(http);
+            }
+            catch (Exception ex) 
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public string CreateNewCartCookie(HttpContext http)
         {
-            var newId = Guid.NewGuid().ToString("N");
-            SetCartId(http, newId);
-            return newId;
+            try 
+            {
+                var newId = Guid.NewGuid().ToString("N");
+                SetCartId(http, newId);
+                return newId;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
         }
 
         public void SetCartId(HttpContext http, string cartId)
-        {
-            http.Session.SetString("CartId", cartId);
+        {   
+            try
+            {
+                http.Session.SetString("CartId", cartId);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public void Clear(HttpContext http)
         {
-            http.Session.Remove("CartId");
+            try
+            {
+                http.Session.Remove("CartId");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

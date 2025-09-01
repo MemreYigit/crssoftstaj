@@ -1,6 +1,6 @@
 ﻿namespace CrsSoft.Models
 {
-    public class AddCommentRequest
+    public class AddCommentRequestModel
     {
         public string Text { get; set; }
     }

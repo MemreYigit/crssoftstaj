@@ -1,4 +1,4 @@
-﻿namespace CrsSoft.Entities.Enums
+﻿namespace CrsSoft.Enums
 {
     public class EnumPlatform
     {

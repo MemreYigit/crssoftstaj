@@ -4,7 +4,7 @@ namespace CrsSoft.Interfaces
 {
     public interface IAuthService
     {
-        Task<UserLoginResponse> LoginUserAsync (UserLoginRequest request);
-        Task RegisterUserAsync (UserRegisterRequest request);
+        Task<UserLoginResponseModel> LoginUser (UserLoginRequestModel request);
+        Task RegisterUser (UserRegisterRequestModel request);
     }
 }

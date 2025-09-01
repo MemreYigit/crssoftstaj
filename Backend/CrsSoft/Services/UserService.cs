@@ -3,7 +3,6 @@ using CrsSoft.Entities;
 using CrsSoft.Interfaces;
 using CrsSoft.Models;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.IdentityModel.Tokens;
 
 namespace CrsSoft.Services
 {
@@ -18,7 +17,7 @@ namespace CrsSoft.Services
             this.passwordHasher = passwordHasher;
         }
 
-        public async Task<UserWithoutPassword> GetUserDetails(int userId)
+        public async Task<UserWithoutPasswordModel> GetUserDetails(int userId)
         {
             try
             {
@@ -28,7 +27,7 @@ namespace CrsSoft.Services
                     throw new Exception("User not found");
                 }
 
-                return new UserWithoutPassword
+                return new UserWithoutPasswordModel
                 {
                     Name = user.Name,
                     Surname = user.Surname ?? string.Empty,
@@ -66,7 +65,7 @@ namespace CrsSoft.Services
             }
         }
 
-        public async Task EditProfile(int userId, EditProfileRequest request)
+        public async Task EditProfile(int userId, EditProfileRequestModel request)
         {
             try
             {
@@ -103,7 +102,7 @@ namespace CrsSoft.Services
             }
         }
 
-        public async Task ChangePassword(int userId, ChangePasswordRequest request)
+        public async Task ChangePassword(int userId, ChangePasswordRequestModel request)
         {
             try
             {

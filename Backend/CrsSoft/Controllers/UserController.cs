@@ -61,7 +61,7 @@ namespace CrsSoft.Controllers
 
         [Authorize]
         [HttpPut("editProfile")]
-        public async Task<IActionResult> editProfile([FromBody] EditProfileRequest request)
+        public async Task<IActionResult> editProfile([FromBody] EditProfileRequestModel request)
         {
             try
             {
@@ -82,7 +82,7 @@ namespace CrsSoft.Controllers
 
         [Authorize]
         [HttpPut("changePassword")]
-        public async Task<IActionResult> changePassword([FromBody] ChangePasswordRequest request)
+        public async Task<IActionResult> changePassword([FromBody] ChangePasswordRequestModel request)
         {
             try
             {

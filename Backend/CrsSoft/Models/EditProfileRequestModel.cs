@@ -1,6 +1,6 @@
 ﻿namespace CrsSoft.Models
 {
-    public class EditProfileRequest
+    public class EditProfileRequestModel
     {
         public string Name { get; set; }
         public string Surname { get; set; }

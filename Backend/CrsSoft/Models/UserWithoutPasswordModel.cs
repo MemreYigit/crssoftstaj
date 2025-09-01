@@ -1,6 +1,6 @@
 ﻿namespace CrsSoft.Models
 {
-    public class UserWithoutPassword
+    public class UserWithoutPasswordModel
     {
         public string Name { get; set; }
         public string? Surname { get; set; }
