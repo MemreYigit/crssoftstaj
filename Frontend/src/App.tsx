@@ -9,6 +9,7 @@ import SearchPage from './Pages/SearchGame/page';
 import Basket from './Pages/Basket/page'
 import { CartProvider } from './Context/CartContext';
 import EditProfile from './Pages/EditProfile/page';
+import Money from './Pages/Money/page';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="basket" element={<Basket />} />
             <Route path="profile" element={<Profile />} />
             <Route path="editprofile" element={<EditProfile />} />
+            <Route path="money" element={<Money />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -82,6 +82,8 @@
             </div>
           )}
         </div>
+        
+        <button style={{marginTop: 5}} onClick={() => navigate("/money")}>Add Money to Account</button>
 
         <div className="orders-section">
           <h3>Your Orders</h3>

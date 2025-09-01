@@ -36,7 +36,6 @@ const EditProfile: React.FC = () => {
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [amount, setAmount] = useState<number>(0);
 
   const [action, setAction] = useState(false);
   const [pMessage, setPMessage] = useState("");
@@ -99,16 +98,6 @@ const EditProfile: React.FC = () => {
     return changePassword(payload);
   };
 
-  const addFunds = async () => {
-    try {
-      await api.put("/user/addFunds", null, { params: { money: amount } });
-      await fetchUser();
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
-
   return (
     <div className="profile-container">
       <h2>Profile</h2>
@@ -118,7 +107,7 @@ const EditProfile: React.FC = () => {
           <p><strong>Name:</strong> {user.name} {user.surname || "No Surname"}</p>
           <p><strong>Email:</strong> {user.email}</p>
           <p><strong>Balance:</strong> ${user.money}</p>
-          <button onClick={() => navigate("/profile")}>Go Profile</button>
+          <button onClick={() => navigate("/profile")}>Back to Profile</button>
         </div>
       )}
 
@@ -160,12 +149,6 @@ const EditProfile: React.FC = () => {
             )}
           </div>
         )}
-
-        <div className="addFunds">
-          <label>Add Funds</label>
-          <input value={amount} onChange={(e) => setAmount(parseInt(e.target.value || "0"))}/>
-          <button onClick={addFunds}>Add</button>
-        </div>
       </div>
     </div>
   );
