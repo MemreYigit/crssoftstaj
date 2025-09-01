@@ -1,10 +1,8 @@
-﻿// OrderService.cs
-using CrsSoft.Data;
+﻿using CrsSoft.Data;
 using CrsSoft.Entities;
 using CrsSoft.Interfaces;
 using CrsSoft.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Immutable;
 using static CrsSoft.Entities.Enums.EnumOrderStatus;
 
 namespace CrsSoft.Services
@@ -34,7 +32,20 @@ namespace CrsSoft.Services
                     throw new InvalidOperationException("Cart is empty or does not exist.");
                 }
 
+                var user = await context.Users.FindAsync(userId);
+                if (user == null)
+                {
+                    throw new InvalidOperationException("User does not exist.");
+                }
+
                 decimal totalPrice = cart.Items.Sum(item => item.Quantity * item.Game.Price);
+
+                if (user.Money < totalPrice)
+                {
+                    throw new InvalidOperationException("Insufficient funds to complete the order.");
+                }
+
+                user.Money -= totalPrice;
 
                 var order = new Order
                 {
@@ -63,7 +74,7 @@ namespace CrsSoft.Services
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error creating order from cart: {ex.Message}");
+                throw new Exception(ex.Message);
             }
         }
 

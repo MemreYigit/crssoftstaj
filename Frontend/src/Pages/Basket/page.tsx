@@ -18,11 +18,12 @@ type Cart = {
 
 const api = axios.create({
   baseURL: "",            
-  withCredentials: true,  // important for cookie
+  withCredentials: true,  
 });
 
 const Basket: React.FC = () => {
   const [cart, setCart] = useState<Cart>({ cartId: "", items: [] });
+  const [error, setError] = useState("");
 
   const loadCart = async () => {
     try {
@@ -58,13 +59,21 @@ const Basket: React.FC = () => {
   };
 
   const buy = async () => {
-    await api.post("/order/createfromcart")
-    await loadCart();
+    try {
+      await api.post("/order/createfromcart")
+      await loadCart();  
+    } catch (err: any) {
+      setError( err.response.data.message);
+    }
   }
 
   return (
     <div className="basket-container">
       <h1>Your Basket</h1>
+
+      {error && (
+        <h3 style={{color: "red"}}>{error}</h3>
+      )}
 
       {games.length === 0 ? (
         <p className="empty-basket">Your basket is empty</p>

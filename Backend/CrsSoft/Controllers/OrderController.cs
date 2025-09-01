@@ -19,8 +19,6 @@ namespace CrsSoft.Controllers
             this.cartCookieService = cartCookieService;
         }
 
-
-        [Authorize]
         [HttpPost("createfromcart")]
         public async Task<IActionResult> CreateOrderFromCart()
         {
