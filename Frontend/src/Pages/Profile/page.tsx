@@ -23,6 +23,7 @@
     orderDate: string;
     orderPrice: number;
     status: string;
+    orderNumber: string;
     orderItems: OrderItem[];
   }
 
@@ -93,7 +94,8 @@
                 <div key={order.orderId} className="order-card">
                   <div className="order-header">
                     <div className="order-info">
-                      <h4>Order #{order.orderId}</h4>
+                      
+                      <h4>Order: {order.orderNumber}</h4>
                       <span className="order-date">
                           {new Date(order.orderDate).toLocaleString("en-US", {
                             year: "numeric",

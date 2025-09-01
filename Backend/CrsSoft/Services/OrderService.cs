@@ -42,6 +42,7 @@ namespace CrsSoft.Services
                     OrderPrice = totalPrice,
                     Status = OrderStatus.Created,
                     OrderDate = DateTime.UtcNow,
+                    orderNumber = Guid.NewGuid(),
                     OrderItems = new List<OrderItem>()
                 };
 
@@ -83,6 +84,7 @@ namespace CrsSoft.Services
                         OrderDate = o.OrderDate,
                         OrderPrice = o.OrderPrice,
                         Status = o.Status.ToString(),
+                        OrderNumber = o.orderNumber,
                         OrderItems = o.OrderItems.Select(oi => new OrderItemGameName
                         {
                             GameID = oi.GameID,

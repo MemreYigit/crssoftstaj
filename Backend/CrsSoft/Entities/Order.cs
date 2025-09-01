@@ -16,6 +16,8 @@ namespace CrsSoft.Entities
         [Required]
         public required OrderStatus Status { get; set; } = OrderStatus.Created;       // Get or set order status
 
+        [Required]
+        public required Guid orderNumber { get; set; } = Guid.NewGuid(); 
 
         // Relationship to User
         public int UserID { get; set; }
