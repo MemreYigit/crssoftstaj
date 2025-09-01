@@ -3,11 +3,12 @@ using CrsSoft.Entities;
 using CrsSoft.Interfaces;
 using CrsSoft.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
 
 namespace CrsSoft.Services
 {
     public class UserService : IUserService
-    {   
+    {
         private readonly DataContext dataContext;
         private readonly IPasswordHasher<User> passwordHasher;
 
@@ -22,7 +23,7 @@ namespace CrsSoft.Services
             try
             {
                 var user = await dataContext.Users.FindAsync(userId);
-                if (user  == null)
+                if (user == null)
                 {
                     throw new Exception("User not found");
                 }
@@ -38,106 +39,6 @@ namespace CrsSoft.Services
             catch (Exception ex)
             {
                 throw new Exception($"Error getting user details: {ex.Message}");
-            }
-        }
-
-        public async Task ChangeName(int userId, string newName)
-        {
-            try
-            {
-                var user = await dataContext.Users.FindAsync(userId);
-                if (user == null)
-                {
-                    throw new Exception("User not found");
-                }
-
-                if (string.IsNullOrWhiteSpace(newName))
-                {
-                    throw new Exception("Name cannot be empty");
-                }
-
-                user.Name = newName;
-                await dataContext.SaveChangesAsync();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error changing name: {ex.Message}");
-            }
-        }
-
-        public async Task ChangeSurname(int userId, string newSurname)
-        {
-            try
-            {
-                var user = await dataContext.Users.FindAsync(userId);
-                if (user == null)
-                {
-                    throw new Exception("User not found");
-                }
-
-                if (string.IsNullOrWhiteSpace(newSurname))
-                {
-                    throw new Exception("Surname cannot be empty");
-                }
-
-                user.Surname = newSurname;
-                await dataContext.SaveChangesAsync();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error changing surname: {ex.Message}");
-            }
-        }
-        
-        public async Task ChangeEmail(int userId, string newEmail)
-        {
-            try
-            {
-                var user = await dataContext.Users.FindAsync(userId);
-                if (user == null)
-                {
-                    throw new Exception("User not found");
-                }
-
-                if (string.IsNullOrWhiteSpace(newEmail))
-                {
-                    throw new Exception("Email cannot be empty");
-                }
-                if (!newEmail.Contains("@"))
-                {
-                    throw new Exception("Invalid email format");
-                }
-
-                user.Email = newEmail;
-                await dataContext.SaveChangesAsync();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error changing email: {ex.Message}");
-            }
-        }
-
-        public async Task ChangePassword(int userId, string newPassword)
-        {
-            try
-            {
-                var user = await dataContext.Users.FindAsync(userId);
-                if (user == null)
-                {
-                    throw new Exception("User not found");
-                }
-
-                if (string.IsNullOrWhiteSpace(newPassword))
-                {
-                    throw new Exception("Password must be at least 6 characters long");
-                }
-
-                user.Password = passwordHasher.HashPassword(user, newPassword);
-                await dataContext.SaveChangesAsync();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error changing password: {ex.Message}");
             }
         }
 
@@ -162,6 +63,83 @@ namespace CrsSoft.Services
             catch (Exception ex)
             {
                 throw new Exception($"Error adding funds: {ex.Message}");
+            }
+        }
+
+        public async Task EditProfile(int userId, EditProfileRequest request)
+        {
+            try
+            {
+                var user = await dataContext.Users.FindAsync(userId);
+                if (user == null)
+                {
+                    throw new Exception("User not found");
+                }
+
+                if (!string.IsNullOrWhiteSpace(request.Name))
+                {
+                    user.Name = request.Name;
+                }
+
+                if (!string.IsNullOrWhiteSpace(request.Surname))
+                {
+                    user.Surname = request.Surname;
+                }
+
+                if (!string.IsNullOrWhiteSpace(request.Email))
+                {
+                    if (!request.Email.Contains("@"))
+                    {
+                        throw new Exception("Invalid email format");
+                    }
+                    user.Email = request.Email;
+                }
+
+                await dataContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error editing profile: {ex.Message}");
+            }
+        }
+
+        public async Task ChangePassword(int userId, ChangePasswordRequest request)
+        {
+            try
+            {
+                var user = await dataContext.Users.FindAsync(userId);
+                if (user == null)
+                {
+                    throw new Exception("User not found");
+                }
+
+                var verificationResult = passwordHasher.VerifyHashedPassword(user, user.Password, request.CurrentPassword);
+                if (verificationResult == PasswordVerificationResult.Failed)
+                {
+                    throw new Exception("Current password is incorrect");
+                }
+
+                if (string.IsNullOrWhiteSpace(request.NewPassword))
+                {
+                    throw new Exception("New password cannot be empty");
+                }
+
+                if (request.NewPassword != request.ConfirmPassword)
+                {
+                    throw new Exception("New password and confirmation do not match");
+                }
+
+                if (request.NewPassword == request.CurrentPassword) 
+                {
+                    throw new Exception("New password must be different from the current password");
+                }
+
+                user.Password = passwordHasher.HashPassword(user, request.NewPassword);
+                await dataContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
     }

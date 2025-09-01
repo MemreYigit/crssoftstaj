@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import "./page.css";
 
 const api = axios.create({
   baseURL: "",            
@@ -14,14 +15,32 @@ type UserDetail = {
   money: number;
 };
 
+type EditProfileRequest = {
+  name: string;
+  surname: string;
+  email: string;
+}
+
+type ChangePasswordRequest = {
+  currentPassword: string;
+  newPassword: string;
+  confirmPassword: string;
+}
+
 const EditProfile: React.FC = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState<UserDetail | null>(null);
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [currentPassword, setCurrentPassword] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [amount, setAmount] = useState<number>(0);
+
+  const [action, setAction] = useState(false);
+  const [pMessage, setPMessage] = useState("");
+  const [pError, setPError] = useState(false);
 
   const fetchUser = async () => {
     try {
@@ -39,21 +58,63 @@ const EditProfile: React.FC = () => {
     fetchUser();
   }, []);
 
-  const putWithParams = async (url: string, params: Record<string, any>) => {
+  const editProfile = async (data: EditProfileRequest) => {
     try {
-      await api.put(url, null, { params });
+      await api.put("/user/editProfile", data);
       await fetchUser();
     } catch {
       console.error();
     }
   };
 
+  const changePassword = async (data: ChangePasswordRequest) => {
+    try {
+      const res = await api.put("/user/changePassword", data);
+      setPMessage(res.data.message);
+      setPError(false);
+      setCurrentPassword("");
+      setConfirmPassword("");
+      setNewPassword("");
+      setAction(false);
+      await fetchUser();
+    } catch (err: any) {
+      console.error(err);
+      if (err.response?.data) {
+        setPMessage(err.response.data);
+        setPError(true);
+      } else {
+        setPMessage("Failed to change password");
+        setPError(true);
+      }    
+    }
+  };
+
+  const handleSaveProfile = () => {
+    const payload: EditProfileRequest = { name, surname, email };
+    return editProfile(payload);
+  };
+
+  const handleChangePassword = () => {
+    const payload: ChangePasswordRequest = { currentPassword, newPassword, confirmPassword };
+    return changePassword(payload);
+  };
+
+  const addFunds = async () => {
+    try {
+      await api.put("/user/addFunds", null, { params: { money: amount } });
+      await fetchUser();
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+
   return (
     <div className="profile-container">
       <h2>Profile</h2>
 
       {user && (
-        <div>
+        <div className="user-card">
           <p><strong>Name:</strong> {user.name} {user.surname || "No Surname"}</p>
           <p><strong>Email:</strong> {user.email}</p>
           <p><strong>Balance:</strong> ${user.money}</p>
@@ -62,34 +123,48 @@ const EditProfile: React.FC = () => {
       )}
 
       <div>
-        <div>
+        <div className="editProfile">
           <label>New Name</label>
           <input value={name} onChange={(e) => setName(e.target.value)} />
-          <button onClick={() => putWithParams("user/changeName", { name })}>Save Name</button>
-        </div>
 
-        <div>
           <label>New Surname</label>
           <input value={surname} onChange={(e) => setSurname(e.target.value)} />
-          <button onClick={() => putWithParams("user/changeSurname", { surname })}>Save Surname</button>
-        </div>
 
-        <div>
           <label>New Email</label>
           <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          <button onClick={() => putWithParams("user/changeEmail", { email })}>Save Email</button>
-        </div>
 
-        <div>
-          <label>New Password</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-          <button onClick={() => putWithParams("user/changePassword", { password })}>Update Password</button>
+          <button onClick={handleSaveProfile}>Save Changes</button>
         </div>
+        
+        <button onClick={() => action ? setAction(false) : setAction(true)}>Change Password</button>
 
-        <div>
+        {!pError && (
+          <p style={{ color: "green" }}>{pMessage}</p>
+        )}
+        
+        {action && (
+          <div className="passwordChange">
+            <label>Current Password</label>
+            <input type="password" value={currentPassword} onChange={(e) => setCurrentPassword(e.target.value)} />
+
+            <label>New Password</label>
+            <input type="password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} />
+
+            <label>Confirm Password</label>
+            <input type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+
+            <button onClick={handleChangePassword}>Save Password Change</button>
+
+            {pError && (
+              <p style={{ color: "red" }}>{pMessage}</p>
+            )}
+          </div>
+        )}
+
+        <div className="addFunds">
           <label>Add Funds</label>
           <input value={amount} onChange={(e) => setAmount(parseInt(e.target.value || "0"))}/>
-          <button onClick={() => putWithParams("user/addFunds", { money: amount })}>Add</button>
+          <button onClick={addFunds}>Add</button>
         </div>
       </div>
     </div>
