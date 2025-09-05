@@ -17,13 +17,13 @@ It is a web application built with:
 - SQL Server
 - IIS Express (comes with Visual Studio)
 
-### Database Setup
+## Database Setup
 
 1. Install SQL server on your PC and make sure it is running. If you want you can use SQL Server Configuration Manager to make sure and run the server.
 
 2. Open SSMS and connect to your SQL Server.
 
-### Backend Setup
+## Backend Setup
 
 1. Open the backend project in Visual Studio and delete "Migrations" folder. (We’ll recreate this folder in the next steps.)
 
@@ -63,7 +63,7 @@ If the project is not running on port 5111, you can update the configuration in 
     });
     ```
 
-### Frontend Setup
+## Frontend Setup
 
 1. Open the frontend project in Visual Studio Code.
 
@@ -87,9 +87,9 @@ Note: Sometimes powershell do not run this code.
 ```
 npm start
 ```
-The frontend will run on [http(http://localhost:3000)]
+The frontend will run on [http://localhost:3000]
 
-### Running the Project
+## Running the Project
 
 1. Make sure your SQL Server is running.
 2. Start the backend in Visual Studio with IIS Express (port 5111).
@@ -99,7 +99,7 @@ The frontend will run on [http(http://localhost:3000)]
 http://localhost:3000
 ```
 
-## Acknowledgements
+# Acknowledgements
 
 - Crssoft for providing mentorship and internship opportunity
 - My mentor Hüseyin Onur Onma
