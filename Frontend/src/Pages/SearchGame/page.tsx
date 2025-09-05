@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
-import axios from "axios";
-
-const API = "http://localhost:5111";
+import api from "../../Api/api";
 
 const SearchPage: React.FC = () => {
   const [searchParams] = useSearchParams();
-  const query = searchParams.get("q") || "";
+  const query = searchParams.get("s");
   const [results, setResults] = useState<any[]>([]);
   const navigate = useNavigate();
 
   useEffect(() => {
     if (query) {
-      axios
-        .get(`${API}/game/search?s=${encodeURIComponent(query)}`)
+      api
+        .get(`/game/search?s=${encodeURIComponent(query)}`)
         .then(res => setResults(res.data))
         .catch(console.error);
     }
@@ -31,8 +29,8 @@ const SearchPage: React.FC = () => {
             <div className="game-info">
               <h3 className="game-platform">{game.platform}</h3>
               <h3 className="game-price">${game.price}</h3>
-            
             </div>
+
           </div>
         ))}
       </div>

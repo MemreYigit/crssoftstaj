@@ -1,12 +1,7 @@
 import { NavLink, useLocation } from "react-router-dom"
 import "./Navbar.css"
-import axios from "axios";
 import { useState, useEffect } from "react";
-
-const api = axios.create({
-  baseURL: "",            
-  withCredentials: true,  
-});
+import api from "../../Api/api";
 
 const Navbar = () => {  
   const [isAuthenticated, setIsAuthenticated] = useState(false);

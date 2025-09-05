@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./page.css";
-import axios from "axios";
+import api from "../../Api/api";
 import { useNavigate } from "react-router-dom";
-
-const api = axios.create({
-  baseURL: "",
-  withCredentials: true, 
-});
 
 const Game: React.FC = () => {
   const [games, setGames] = useState<any[]>([]);
@@ -32,7 +27,7 @@ const Game: React.FC = () => {
     }
 
     setLoading(true);
-    const t = setTimeout(() => {
+    const t = setTimeout(() => {              
       api.get(`/game/search?s=${encodeURIComponent(search.trim())}`)
         .then(res => {
           setSearchResults(res.data);
@@ -42,7 +37,7 @@ const Game: React.FC = () => {
         .finally(() => setLoading(false));
     }, 250);
 
-    return () => clearTimeout(t);
+    return () => clearTimeout(t);             // Clean up timer (250)
   }, [search]);
 
   const handleSelect = (id: number) => {
@@ -52,7 +47,7 @@ const Game: React.FC = () => {
 
   const handleSearchClick = () => {
     if (!search.trim()) return;
-    navigate(`/search?q=${encodeURIComponent(search.trim())}`);
+    navigate(`/search?s=${encodeURIComponent(search.trim())}`);
   };
 
   const addToCart = (gameId: number, qty: number = 1) => {

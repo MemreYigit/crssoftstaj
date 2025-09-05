@@ -1,12 +1,7 @@
 import { Link, useParams } from "react-router-dom";
-import axios from "axios";
+import api from "../../Api/api";
 import { useEffect, useState } from "react";
 import "./page.css";
-
-const api = axios.create({
-  baseURL: "",            
-  withCredentials: true,
-});
 
 type Comment = {
   id: number;
@@ -17,12 +12,22 @@ type Comment = {
   userName: string;
 };
 
+type Game = {
+  id: number;
+  name: string;
+  platform: string;
+  type: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+};
+
 const SingleGame: React.FC = () => {
   const { gameId } = useParams();
-  const [game, setGame] = useState<any>(null);
+  const [game, setGame] = useState<Game>();
   const [makeComment, setMakeComment] = useState("");
   const [comments, setComments] = useState<Comment[]>([]);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     api.get(`/game/${gameId}`)

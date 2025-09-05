@@ -48,8 +48,6 @@ export function CartProvider({children} : {children: ReactNode}) {
     });
   };
 
-
-
   const increaseQuantity = (id: number) => {
     setItems(prevItems => {
         return prevItems.map(item => 

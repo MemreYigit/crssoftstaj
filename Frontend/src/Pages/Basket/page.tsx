@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import axios from "axios";
+import api from "../../Api/api";
 import "./page.css";
 
 type CartItem = { 
@@ -15,12 +15,6 @@ type Cart = {
   items: CartItem[] 
 };
 
-
-const api = axios.create({
-  baseURL: "",            
-  withCredentials: true,  
-});
-
 const Basket: React.FC = () => {
   const [cart, setCart] = useState<Cart>({ cartId: "", items: [] });
   const [error, setError] = useState("");
@@ -29,7 +23,8 @@ const Basket: React.FC = () => {
     try {
       const res = await api.get<Cart>("/cart");
       setCart(res.data);
-    } finally {
+    } catch {
+      console.error();
     }
   };
 
@@ -61,7 +56,8 @@ const Basket: React.FC = () => {
   const buy = async () => {
     try {
       await api.post("/order/createfromcart")
-      await loadCart();  
+      await loadCart(); 
+      setError(""); 
     } catch (err: any) {
       setError(err.response.data.message || err.response.data.error);
     }

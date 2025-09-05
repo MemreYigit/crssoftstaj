@@ -1,12 +1,7 @@
-import axios from "axios";
+import api from "../../Api/api";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./page.css"; 
-
-const api = axios.create({
-  baseURL: "",            
-  withCredentials: true,  
-});
 
 const Money: React.FC = () => {
   const [amount, setAmount] = useState(0);

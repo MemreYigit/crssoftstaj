@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import "./page.css";
-import axios from "axios";
+import api from "../../Api/api";
 import { useNavigate } from "react-router-dom";
-
-const api = axios.create({
-  baseURL: "",
-  withCredentials: true,
-});
 
 type Action = "login" | "register";
 
@@ -15,26 +10,26 @@ const Login: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState("");
 
   const navigate = useNavigate();
 
   const loginSubmit = async () => {
     await api.post("/login", { email, password });
-    setError(null);
+    setError("");
     navigate("/");
   };
 
   const registerSubmit = async () => {
     await api.post("/register", { email, password, name });
-    setError(null);
+    setError("");
     setAction("login");
     navigate("/login");
   };
 
   const handleSubmit = async (e:React.FormEvent) => {
     try {
-      e.preventDefault();
+      e.preventDefault();             // prevents browser refresh
       if (action === "login") {
         await loginSubmit();
       } 
@@ -88,28 +83,26 @@ const Login: React.FC = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-        </form>
+          
+          <div className="login-form" onSubmit={handleSubmit}>
+            <button className="login-submit">
+              {action === "login" ? "Login" : "Register"}
+            </button>
 
-        <form className="login-form" onSubmit={handleSubmit}>
-          <button className="login-submit">
-            {action === "login" ? "Login" : "Register"}
-          </button>
-
-          <div className="login-toggle">
-            {action === "login" && (
-              <button onClick={() => {setAction("register"); setError(null)}}>
-                Don’t have an account?
-              </button>
-            )}
-            {action === "register" && (
-              <button onClick={() => {setAction("login"); setError(null)}}>
-                Already have an account? 
-              </button>
-            )}
-
+            <div className="login-toggle">
+              {action === "login" && (
+                <button onClick={() => {setAction("register"); setError("")}}>
+                  Don’t have an account?
+                </button>
+              )}
+              {action === "register" && (
+                <button onClick={() => {setAction("login"); setError("")}}>
+                  Already have an account? 
+                </button>
+              )}
+            </div>
           </div>
         </form>
-
       </div>
     </div>
   );

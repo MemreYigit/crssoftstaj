@@ -1,12 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import api from "../../Api/api";
 import { useEffect, useState } from "react";
 import "./page.css";
-
-const api = axios.create({
-  baseURL: "",            
-  withCredentials: true,  
-});
 
 type UserDetail = {
   name: string;
@@ -15,13 +10,13 @@ type UserDetail = {
   money: number;
 };
 
-type EditProfileRequest = {
+type EditProfileRequestModel = {
   name: string;
   surname: string;
   email: string;
 }
 
-type ChangePasswordRequest = {
+type ChangePasswordRequestModel = {
   currentPassword: string;
   newPassword: string;
   confirmPassword: string;
@@ -29,7 +24,7 @@ type ChangePasswordRequest = {
 
 const EditProfile: React.FC = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useState<UserDetail | null>(null);
+  const [user, setUser] = useState<UserDetail>();
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");
   const [email, setEmail] = useState("");
@@ -37,9 +32,9 @@ const EditProfile: React.FC = () => {
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const [action, setAction] = useState(false);
-  const [pMessage, setPMessage] = useState("");
-  const [pError, setPError] = useState(false);
+  const [action, setAction] = useState(false);            // Change password part open or close
+  const [pMessage, setPMessage] = useState("");           // Change password message
+  const [pError, setPError] = useState(false);            // Change password error
 
   const fetchUser = async () => {
     try {
@@ -57,7 +52,7 @@ const EditProfile: React.FC = () => {
     fetchUser();
   }, []);
 
-  const editProfile = async (data: EditProfileRequest) => {
+  const editProfile = async (data: EditProfileRequestModel) => {
     try {
       await api.put("/user/editProfile", data);
       await fetchUser();
@@ -66,7 +61,7 @@ const EditProfile: React.FC = () => {
     }
   };
 
-  const changePassword = async (data: ChangePasswordRequest) => {
+  const changePassword = async (data: ChangePasswordRequestModel) => {
     try {
       const res = await api.put("/user/changePassword", data);
       setPMessage(res.data.message);
@@ -89,12 +84,12 @@ const EditProfile: React.FC = () => {
   };
 
   const handleSaveProfile = () => {
-    const payload: EditProfileRequest = { name, surname, email };
+    const payload: EditProfileRequestModel = { name, surname, email };
     return editProfile(payload);
   };
 
   const handleChangePassword = () => {
-    const payload: ChangePasswordRequest = { currentPassword, newPassword, confirmPassword };
+    const payload: ChangePasswordRequestModel = { currentPassword, newPassword, confirmPassword };
     return changePassword(payload);
   };
 
@@ -125,7 +120,7 @@ const EditProfile: React.FC = () => {
           <button onClick={handleSaveProfile}>Save Changes</button>
         </div>
         
-        <button onClick={() => action ? setAction(false) : setAction(true)}>Change Password</button>
+        <button onClick={() => {setAction(prev => !prev); setPMessage("");}}>Change Password</button>
 
         {!pError && (
           <p style={{ color: "green" }}>{pMessage}</p>

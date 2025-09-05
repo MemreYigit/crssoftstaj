@@ -1,148 +1,140 @@
-  import { useNavigate } from "react-router-dom"
-  import axios from "axios";
-  import { useEffect, useState } from "react";
-  import "./page.css"
+import { useNavigate } from "react-router-dom"
+import api from "../../Api/api";
+import { useEffect, useState } from "react";
+import "./page.css"
 
+interface OrderItem {
+  orderID: number;
+  gameID: number;
+  gameName: string;
+  gamePlatform: string;
+  quantity: number;
+  price: number;
+}
 
-  const api = axios.create({
-    baseURL: "",            
-    withCredentials: true,  
-  });
+interface Order {
+  orderId: number;
+  orderDate: string;
+  orderPrice: number;
+  status: string;
+  orderNumber: string;
+  orderItems: OrderItem[];
+}
 
-  interface OrderItem {
-    orderID: number;
-    gameID: number;
-    gameName: string;
-    gamePlatform: string;
-    quantity: number;
-    price: number;
-  }
+interface UserDetail {
+  name: string;
+  surname: string;
+  email: string;
+  money: number;
+}
 
-  interface Order {
-    orderId: number;
-    orderDate: string;
-    orderPrice: number;
-    status: string;
-    orderNumber: string;
-    orderItems: OrderItem[];
-  }
+const Profile: React.FC = () => {
+  const navigate = useNavigate();
+  const [orders, setOrders] = useState<Order[]>([]);
+  const [user, setUser] = useState<UserDetail>();
 
-  interface UserDetail {
-    name: string;
-    surname: string;
-    email: string;
-    money: number;
-  }
-
-  const Profile: React.FC = () => {
-    const navigate = useNavigate();
-    const [orders, setOrders] = useState<any[]>([]);
-    const [user, setUser] = useState<UserDetail>();
-
-    const handleLogout = async () => {
-      try {
-        await api.post("/logout");
-        navigate("/login");
-      }
-      catch (err) {
-        console.error("Logout failed: ", err);
-      }
+  const handleLogout = async () => {
+    try {
+      await api.post("/logout");
+      navigate("/login");
     }
+    catch (err) {
+      console.error("Logout failed: ", err);
+    }
+  }
 
-    useEffect(() => {
-      api.get("user/getUserInfo")
-        .then(res => setUser(res.data))
-        .catch(console.error);
-      api.get("order/orderDetails")
-        .then(res => setOrders(res.data))
-        .catch(console.error);
-    }, []);
+  useEffect(() => {
+    api.get("user/getUserInfo")
+      .then(res => setUser(res.data))
+      .catch(console.error);
+    api.get("order/orderDetails")
+      .then(res => setOrders(res.data))
+      .catch(console.error);
+  }, []);
 
+  return (
+    <div className="profile-container">
+      <div className="profile-header">
+        <h2>Profile</h2>
+        <button onClick={handleLogout} className="logout-btn">Logout</button>
+      </div>
 
-    return (
-      <div className="profile-container">
-        <div className="profile-header">
-          <h2>Profile</h2>
-          <button onClick={handleLogout} className="logout-btn">Logout</button>
-        </div>
+      <div>
+        {user && (
+          <div>
+            <p>
+              <strong>Name:</strong> {user.name} {user.surname || ""}
+            </p>
+            <p>
+              <strong>Email:</strong> {user.email}
+            </p>
+            <p>
+              <strong>Balance:</strong> ${user.money.toFixed(2)}
+            </p>
+            <button onClick={() => navigate("/editprofile")}>Edit Profile</button>
+          </div>
+        )}
+      </div>
+      
+      <button style={{marginTop: 5}} onClick={() => navigate("/money")}>Add Money to Account</button>
 
-        <div>
-          {user && (
-            <div>
-              <p>
-                <strong>Name:</strong> {user.name} {user.surname || "No Surname"}
-              </p>
-              <p>
-                <strong>Email:</strong> {user.email}
-              </p>
-              <p>
-                <strong>Balance:</strong> ${user.money.toFixed(2)}
-              </p>
-              <button onClick={() => navigate("/editprofile")}>Edit Profile</button>
-            </div>
-          )}
-        </div>
+      <div className="orders-section">
+        <h3>Your Orders</h3>
         
-        <button style={{marginTop: 5}} onClick={() => navigate("/money")}>Add Money to Account</button>
-
-        <div className="orders-section">
-          <h3>Your Orders</h3>
-          
-          {orders.length === 0 ? (
-            <p className="no-orders">You don't have any orders!</p>
-          ) : (
-            <div className="orders-list">
-              {orders.map((order: Order) => (
-                <div key={order.orderId} className="order-card">
-                  <div className="order-header">
-                    <div className="order-info">
-                      
-                      <h4>Order: {order.orderNumber}</h4>
-                      <span className="order-date">
-                          {new Date(order.orderDate).toLocaleString("en-US", {
-                            year: "numeric",
-                            month: "short",
-                            day: "numeric",
-                            hour: "2-digit",
-                            minute: "2-digit"
-                          })}
-                      </span>
-                    </div>
-                    <div className="order-status">
-                      <span className="status-badge">{order.status}</span>
-                    </div>
+        {orders.length === 0 ? (
+          <p className="no-orders">You don't have any orders!</p>
+        ) : (
+          <div className="orders-list">
+            {orders.map((order: Order) => (
+              <div key={order.orderId} className="order-card">
+                <div className="order-header">
+                  <div className="order-info">
+                    
+                    <h4>Order: {order.orderNumber}</h4>
+                    <span className="order-date">
+                        {new Date(order.orderDate).toLocaleString("en-US", {
+                          year: "numeric",
+                          month: "short",
+                          day: "numeric",
+                          hour: "2-digit",
+                          minute: "2-digit"
+                        })}
+                    </span>
                   </div>
-
-                  <div className="order-items">
-                    <h5>Items:</h5>
-                    {order.orderItems.map((item: OrderItem) => (
-                      <div key={`${item.orderID}-${item.gameID}`} className="order-item">
-                        <div className="order-item-info">
-                          <span className="order-item-name">{item.gameName}</span>
-                          <span className="order-item-quantity">{item.gamePlatform}</span>
-                          <span className="order-item-quantity">Qty: {item.quantity}</span>
-                        </div>
-                        <div className="order-item-price">
-                          ${item.price}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="order-footer">
-                    <div className="order-total">
-                      <p>Total: ${order.orderPrice}</p>
-                    </div>
+                  <div className="order-status">
+                    <span className="status-badge">{order.status}</span>
                   </div>
                 </div>
-              ))}
-            </div>
-          )}
-        </div>
 
+                <div className="order-items">
+                  <h5>Items:</h5>
+                  {order.orderItems.map((item: OrderItem) => (
+                    <div key={`${item.orderID}-${item.gameID}`} className="order-item">
+                      <div className="order-item-info">
+                        <span className="order-item-name">{item.gameName}</span>
+                        <span className="order-item-quantity">{item.gamePlatform}</span>
+                        <span className="order-item-quantity">Qty: {item.quantity}</span>
+                      </div>
+                      <div className="order-item-price">
+                        ${item.price}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="order-footer">
+                  <div className="order-total">
+                    <p>Total: ${order.orderPrice}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
-    );
-  };
 
+    </div>
+  );
+};
 
-  export default Profile;
+export default Profile;
