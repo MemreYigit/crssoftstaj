@@ -87,7 +87,7 @@ Note: Sometimes powershell do not run this code.
 ```
 npm start
 ```
-The frontend will run on [http://localhost:3000]
+The frontend will run on [(http://localhost:3000)]
 
 ## Running the Project
 
