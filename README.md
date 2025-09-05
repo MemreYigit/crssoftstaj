@@ -51,8 +51,8 @@ This will create "Migrations" folder and the database schema.
 Note:
 If the project is not running on port 5111, you can update the configuration in one of the following ways:
 - In Visual Studio, click the small drop-down arrow next to IIS Express, go to Debug Properties, and change the port.
-- Alternatively, update the Program.cs file in the CORS configuration to include the correct origin:
-    ```
+- Alternatively, update the Program.cs file in the backend and the api.tsx file in the frontend to use the correct origin.
+    ``` Backend
     builder.Services.AddCors(o =>
     {
         o.AddPolicy("Spa", p => p
@@ -62,7 +62,17 @@ If the project is not running on port 5111, you can update the configuration in 
             .AllowCredentials()); // needed for cookies
     });
     ```
+    ``` Frontend
+    import axios from "axios";
 
+    const api = axios.create({
+    baseURL: "http://localhost:5111",   // Change this URL            
+    withCredentials: true,  
+    });
+
+    export default api;
+    ```
+    
 ## Frontend Setup
 
 1. Open the frontend project in Visual Studio Code.
